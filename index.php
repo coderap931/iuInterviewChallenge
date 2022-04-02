@@ -1,53 +1,36 @@
-<?php
-    //Assign database connection var
-    $dbconn = mysqli_connect("localhost", "root", "", "iu_degrees");
+<!DOCTYPE html>
+<html lang="en">
 
-    //Assign rowcounter var
-    $rowcounter = 0;
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>School Picker</title>
+</head>
 
-    // vvv USED TO INSERT DATA INTO MySQL DB VIA PHPMYADMIN vvv
-    // //Assign xml file load var
-    // $xml = simplexml_load_file("degree-list.xml")
-    //     or die("Error: Cannot read file");
-
-    // //Loop through each child(degree) in the xml file and insert them into the db with an sql query
-    // foreach ($xml->children() as $row) {
-    //     $id = $row->id;
-    //     $link = $row->link;
-    //     $title = $row->title;
-    //     $school = $row->school;
-
-    //     //Define sql query for current degree
-    //     $sql = "INSERT INTO degrees(id, link, title, school) VALUES (' " . $id . "','" . $link . "','" . $title . "','" . $school . "')";
-
-    //     //Define query result value
-    //     $result = mysqli_query($dbconn, $sql);
-
-    //     //If the query result returns something move to next row and run again, else give error message
-    //     if(! empty($result)) {
-    //         $rowcounter ++;
-    //     } else {
-    //         $error = mysqli_error($dbconn) . "\n";
-    //     }
-    // }
-
-    // //If the rowcounter incrememted return message "[x] rows inserted", else give "no rows inserted" message
-    // if ($rowcounter > 0) {
-    //     $message = $rowcounter . " rows inserted";
-    // } else {
-    //     $message = "No rows inserted";
-    // }
-?>
-
-<!-- INSERT CSS and HTML -->
-
-<div class="rowcounter">
-    <?php echo $message; ?>
-</div>
-
-<?php if (! empty($error)) {
-    ?>
-    <div class="error">
-        <?php echo($error); ?>
+<body>
+    <div id='outer_wrapper'>
+        <h1>Find Your Degree</h1>
+        <form action="action.php" method="POST">
+            <label for="schools">Choose a School:</label>
+            <select name="schools" id="schools" oninput="showDegrees(this.value)">
+                <option value="Jacobs School of Music">Jacobs School of Music</option>
+                <option value="College of Arts and Sciences">College of Arts and Sciences</option>
+                <option value="School of Public and Environmental Affairs">School of Public and Environmental Affairs</option>
+                <option value="School of Education">School of Education</option>
+                <option value="Kelley School of Business">Kelley School of Business</option>
+                <option value="Maurer School of Law">Maurer School of Law</option>
+                <option value="School of Public Health—Bloomington">School of Public Health—Bloomington</option>
+                <option value="School of Medicine">School of Medicine</option>
+                <option value="School of Optometry">School of Optometry</option>
+                <option value="School of Informatics and Computing">School of Informatics and Computing</option>
+                <option value="School of Social Work">School of Social Work</option>
+                <option value="School of Journalism">School of Journalism</option>
+                <option value="School of Nursing">School of Nursing</option>
+            </select>
+            <input type="submit" value="Submit">
+        </form>
     </div>
-<?php } ?>
+</body>
+
+</html>
