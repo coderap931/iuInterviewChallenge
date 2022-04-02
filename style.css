@@ -1,0 +1,44 @@
+body{
+    background-color:  #EDEBEB;
+    margin: 0%;
+    text-align: center;
+    font-family: BentonSansRegular,Helvetica,Arial,sans-seri
+}
+
+form, label, select {
+    background-color:  #EDEBEB;
+    font-size: large;
+}
+
+h1 {
+    background-color:  #990000;
+    font-family: BentonSansBold,Helvetica,Arial,sans-seri;
+    margin-top: 0vh;
+    color: #EDEBEB;
+}
+
+table {
+    width: 50vw;
+    margin-left: 25vw;
+    margin-right: 25vw;
+    margin-top: 2vh;
+    margin-bottom: auto;
+    border: #990000 3px solid;
+    border-collapse: collapse;
+}
+
+th {
+    border-bottom: 2px solid black;
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+}
+
+td {
+    border: 2px solid gray;
+}
+
+a:hover {
+    background: #990000;
+    color: #EDEBEB;
+    border-radius: 5%;
+}

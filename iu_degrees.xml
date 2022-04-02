@@ -5,7 +5,7 @@
 - https://www.phpmyadmin.net
 -
 - Host: 127.0.0.1
-- Generation Time: Apr 01, 2022 at 10:46 PM
+- Generation Time: Apr 02, 2022 at 02:54 PM
 - Server version: 10.4.24-MariaDB
 - PHP Version: 7.1.32
 -->
@@ -21,7 +21,8 @@
                   `id` varchar(32) NOT NULL,
                   `link` varchar(256) NOT NULL,
                   `title` varchar(256) NOT NULL,
-                  `school` varchar(128) NOT NULL
+                  `school` varchar(128) NOT NULL,
+                  UNIQUE KEY `id` (`id`)
                 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
             </pma:table>
         </pma:database>
@@ -32,6 +33,618 @@
     -->
     <database name="iu_degrees">
         <!-- Table degrees -->
+        <table name="degrees">
+            <column name="id"> 06052594814f4e1a4609ac80c6bf32a</column>
+            <column name="link">http://music.indiana.edu/departments/academic/opera/degrees.shtml</column>
+            <column name="title">Opera Studies</column>
+            <column name="school">Jacobs School of Music</column>
+        </table>
+        <table name="degrees">
+            <column name="id"> 1c60f4e97f4f4e1c00d5bb2fb5064c8</column>
+            <column name="link">http://www.indiana.edu/~rena/</column>
+            <column name="title">Renaissance Studies</column>
+            <column name="school">College of Arts and Sciences</column>
+        </table>
+        <table name="degrees">
+            <column name="id"> 23c6dc67814f4e1c015589d4d277385</column>
+            <column name="link">http://www.indiana.edu/~neurosci</column>
+            <column name="title">Neuroscience</column>
+            <column name="school">College of Arts and Sciences</column>
+        </table>
+        <table name="degrees">
+            <column name="id"> 2432db3d814f4e1a6c596c2a4301b97</column>
+            <column name="link">https://spea.indiana.edu/undergraduate/majors-minors-certificates/healthcare-management.html</column>
+            <column name="title">Healthcare Management and Policy</column>
+            <column name="school">School of Public and Environmental Affairs</column>
+        </table>
+        <table name="degrees">
+            <column name="id"> 3281d7f3814f4e1a3d289d5e9f91cdb</column>
+            <column name="link">http://education.indiana.edu/graduate/programs/early-childhood/index.html</column>
+            <column name="title">Early Childhood Education (graduate)</column>
+            <column name="school">School of Education</column>
+        </table>
+        <table name="degrees">
+            <column name="id"> 32f226a1814f4e1a7e376ff40e87e29</column>
+            <column name="link">https://spea.indiana.edu/doctoral/degrees/public-policy.html</column>
+            <column name="title">Public Policy</column>
+            <column name="school">School of Public and Environmental Affairs</column>
+        </table>
+        <table name="degrees">
+            <column name="id"> 409c2883814f4e1a26d5758ea92058d</column>
+            <column name="link">http://education.indiana.edu/graduate/programs/art-ed/index.html</column>
+            <column name="title">Art Education (graduate)</column>
+            <column name="school">School of Education</column>
+        </table>
+        <table name="degrees">
+            <column name="id"> 40ab2f45814f4e1a26d5758e4947551</column>
+            <column name="link">http://education.indiana.edu/graduate/programs/elementary-ed/index.html</column>
+            <column name="title">Elementary Education (graduate)</column>
+            <column name="school">School of Education</column>
+        </table>
+        <table name="degrees">
+            <column name="id"> 40bc429b814f4e1a26d5758e1908030</column>
+            <column name="link">http://education.indiana.edu/graduate/programs/literacy-culture-language/index.html</column>
+            <column name="title">Literacy, Culture, and Language Education</column>
+            <column name="school">School of Education</column>
+        </table>
+        <table name="degrees">
+            <column name="id"> 40c0a271814f4e1a26d5758e0e8084f</column>
+            <column name="link">http://education.indiana.edu/graduate/programs/secondary-ed/index.html</column>
+            <column name="title">Secondary Education (graduate)</column>
+            <column name="school">School of Education</column>
+        </table>
+        <table name="degrees">
+            <column name="id"> 40c7f1f4814f4e1a26d5758ef268167</column>
+            <column name="link">http://education.indiana.edu/graduate/programs/special-ed/index.html</column>
+            <column name="title">Special Education (graduate)</column>
+            <column name="school">School of Education</column>
+        </table>
+        <table name="degrees">
+            <column name="id"> 43dba7e37f4f4e1a0072da3da3e591a</column>
+            <column name="link">http://www.indiana.edu/~landskib/</column>
+            <column name="title">Landscape Studies</column>
+            <column name="school">College of Arts and Sciences</column>
+        </table>
+        <table name="degrees">
+            <column name="id"> 450a79567f4f4e1a01ba4b54cd18281</column>
+            <column name="link">http://kelley.iu.edu/onlineMBA/Online/MSGSCM/page36795.cfm</column>
+            <column name="title">Global Supply Chain Management (online program)</column>
+            <column name="school">Kelley School of Business</column>
+        </table>
+        <table name="degrees">
+            <column name="id"> 450b68837f4f4e1a01ba4b54ba6f278</column>
+            <column name="link">http://kelley.iu.edu/odt/</column>
+            <column name="title">Supply Chain Management</column>
+            <column name="school">Kelley School of Business</column>
+        </table>
+        <table name="degrees">
+            <column name="id"> 450c02d07f4f4e1a01ba4b547c8db77</column>
+            <column name="link">http://kelley.iu.edu/odt/</column>
+            <column name="title">Technology Management (co-major only)</column>
+            <column name="school">Kelley School of Business</column>
+        </table>
+        <table name="degrees">
+            <column name="id"> 450cf15f7f4f4e1a01ba4b54f8219ee</column>
+            <column name="link">http://kelley.iu.edu/odt/</column>
+            <column name="title">Supply Chain and Operations</column>
+            <column name="school">Kelley School of Business</column>
+        </table>
+        <table name="degrees">
+            <column name="id"> 450da3f67f4f4e1a01ba4b54c876c5e</column>
+            <column name="link">http://kelley.iu.edu/bepp/undergraduate/page14634.html</column>
+            <column name="title">Economic Consulting</column>
+            <column name="school">Kelley School of Business</column>
+        </table>
+        <table name="degrees">
+            <column name="id"> 450f18807f4f4e1a01ba4b54d74dc13</column>
+            <column name="link">http://kelley.iu.edu/bepp/</column>
+            <column name="title">Public Policy</column>
+            <column name="school">Kelley School of Business</column>
+        </table>
+        <table name="degrees">
+            <column name="id"> 452569827f4f4e1a01ba4b54ce5b73a</column>
+            <column name="link">http://kelley.iu.edu/Ugrad/Academics/Curriculum/page39589.html</column>
+            <column name="title">Information and Process Management</column>
+            <column name="school">Kelley School of Business</column>
+        </table>
+        <table name="degrees">
+            <column name="id"> 4529ac1a7f4f4e1a01ba4b54f2da0e6</column>
+            <column name="link">http://kelley.iu.edu/odt/</column>
+            <column name="title">Decision Sciences</column>
+            <column name="school">Kelley School of Business</column>
+        </table>
+        <table name="degrees">
+            <column name="id"> 452b19a57f4f4e1a01ba4b540fed599</column>
+            <column name="link">http://kelley.iu.edu/BEPP/Doctoral/page14133.html</column>
+            <column name="title">Business Economics</column>
+            <column name="school">Kelley School of Business</column>
+        </table>
+        <table name="degrees">
+            <column name="id"> 4557338d7f4f4e1a01ba4b544f76e6f</column>
+            <column name="link">http://www.indiana.edu/~arthist/</column>
+            <column name="title">History of Art</column>
+            <column name="school">College of Arts and Sciences</column>
+        </table>
+        <table name="degrees">
+            <column name="id"> 4558d7cd7f4f4e1a01ba4b54a4edb4f</column>
+            <column name="link">http://www.indiana.edu/~finaweb/test/cms/fina/areas/digital-art/</column>
+            <column name="title">Digital Art</column>
+            <column name="school">College of Arts and Sciences</column>
+        </table>
+        <table name="degrees">
+            <column name="id"> 455a521c7f4f4e1a01ba4b54c9af292</column>
+            <column name="link">http://www.indiana.edu/~finaweb/test/cms/fina/areas/metals/</column>
+            <column name="title">Metalsmithing and Jewelry Design</column>
+            <column name="school">College of Arts and Sciences</column>
+        </table>
+        <table name="degrees">
+            <column name="id"> 520a736c7f4f4e1c00d2fa99ff722ac</column>
+            <column name="link">https://spea.indiana.edu/masters/degrees-certificates/public-affairs/concentrations/international-development.html</column>
+            <column name="title">International Development</column>
+            <column name="school">School of Public and Environmental Affairs</column>
+        </table>
+        <table name="degrees">
+            <column name="id"> 521247467f4f4e1c00d2fa99f03bbc1</column>
+            <column name="link">https://spea.indiana.edu/masters/degrees-certificates/public-affairs/concentrations/economic-development.html</column>
+            <column name="title">Economic Development</column>
+            <column name="school">School of Public and Environmental Affairs</column>
+        </table>
+        <table name="degrees">
+            <column name="id"> 5213a3007f4f4e1c00d2fa99aaab8d5</column>
+            <column name="link">https://spea.indiana.edu/masters/degrees-certificates/public-affairs/concentrations/environmental-policy.html</column>
+            <column name="title">Environmental Policy and Natural Resource Management</column>
+            <column name="school">School of Public and Environmental Affairs</column>
+        </table>
+        <table name="degrees">
+            <column name="id"> 5233cd167f4f4e1c00d2fa99722d8cc</column>
+            <column name="link">https://spea.indiana.edu/masters/degrees-certificates/public-affairs/concentrations/local-government.html</column>
+            <column name="title">Local Government Management</column>
+            <column name="school">School of Public and Environmental Affairs</column>
+        </table>
+        <table name="degrees">
+            <column name="id"> 5237a2fa7f4f4e1c00d2fa99acba587</column>
+            <column name="link">http://www.indiana.edu/~spea/career_development/about_us/career_development/career_guides/social_enterprise.shtml</column>
+            <column name="title">Social Entrepreneurship</column>
+            <column name="school">School of Public and Environmental Affairs</column>
+        </table>
+        <table name="degrees">
+            <column name="id"> 54b297b8814f4e1a63de5fd6ebe2309</column>
+            <column name="link">http://www.geology.indiana.edu/education/bs-atmos.html</column>
+            <column name="title">Atmospheric Science</column>
+            <column name="school">College of Arts and Sciences</column>
+        </table>
+        <table name="degrees">
+            <column name="id"> 54b696bd814f4e1a63de5fd6fc77eef</column>
+            <column name="link">http://www.bio.indiana.edu/graduate/eeb/</column>
+            <column name="title">Evolution, Ecology and Behavior</column>
+            <column name="school">College of Arts and Sciences</column>
+        </table>
+        <table name="degrees">
+            <column name="id"> 54b866d6814f4e1a63de5fd6d494ba2</column>
+            <column name="link">http://www.indiana.edu/~telecom/undergraduate/certificate_game.shtml</column>
+            <column name="title">Game Studies</column>
+            <column name="school">College of Arts and Sciences</column>
+        </table>
+        <table name="degrees">
+            <column name="id"> 54b9cc3c814f4e1a63de5fd61217cf5</column>
+            <column name="link">http://www.bio.indiana.edu/graduate/mcdb/</column>
+            <column name="title">Genetics</column>
+            <column name="school">College of Arts and Sciences</column>
+        </table>
+        <table name="degrees">
+            <column name="id"> 54c472f5814f4e1a63de5fd69c3a587</column>
+            <column name="link">http://www.indiana.edu/~telecom/graduate/</column>
+            <column name="title">Mass Communication</column>
+            <column name="school">College of Arts and Sciences</column>
+        </table>
+        <table name="degrees">
+            <column name="id"> 54c77c2b814f4e1a63de5fd69b51a84</column>
+            <column name="link">http://www.bio.indiana.edu/graduate/mcdb/</column>
+            <column name="title">Molecular, Cellular, and Developmental Biology</column>
+            <column name="school">College of Arts and Sciences</column>
+        </table>
+        <table name="degrees">
+            <column name="id"> 54c87e59814f4e1a63de5fd673a73be</column>
+            <column name="link">http://www.indiana.edu/~telecom/undergraduate/certificate_media.shtml</column>
+            <column name="title">New Media and Interactive Storytelling</column>
+            <column name="school">College of Arts and Sciences</column>
+        </table>
+        <table name="degrees">
+            <column name="id"> 54c91d6c814f4e1a63de5fd6a3e232d</column>
+            <column name="link">http://www.bio.indiana.edu/graduate/mcdb/</column>
+            <column name="title">Plant Sciences</column>
+            <column name="school">College of Arts and Sciences</column>
+        </table>
+        <table name="degrees">
+            <column name="id"> 54cc3b52814f4e1a63de5fd64f31968</column>
+            <column name="link">http://stat.indiana.edu/grad/</column>
+            <column name="title">Statistical Science</column>
+            <column name="school">College of Arts and Sciences</column>
+        </table>
+        <table name="degrees">
+            <column name="id"> 54d017e3814f4e1a63de5fd67e1f675</column>
+            <column name="link">http://www.kelley.iu.edu/ODT/AboutUs/DecisionSciences/page11147.html</column>
+            <column name="title">Business Analytics</column>
+            <column name="school">Kelley School of Business</column>
+        </table>
+        <table name="degrees">
+            <column name="id"> 54d3fbf4814f4e1a63de5fd67a1ab28</column>
+            <column name="link">http://kelley.iu.edu/Management/Masters/requirements/page14588.html#entrepreneurship</column>
+            <column name="title">Entrepreneurship and Corporate Innovation</column>
+            <column name="school">Kelley School of Business</column>
+        </table>
+        <table name="degrees">
+            <column name="id"> 54d5f149814f4e1a63de5fd64510a2c</column>
+            <column name="link">http://kelley.iu.edu/Ugrad/Academics/Curriculum/page39588.html</column>
+            <column name="title">Real Estate</column>
+            <column name="school">Kelley School of Business</column>
+        </table>
+        <table name="degrees">
+            <column name="id"> 54d6f2ef814f4e1a63de5fd66cb25ce</column>
+            <column name="link">http://kelley.iu.edu/MBA/Academics/MajorsMinors/page38914.html</column>
+            <column name="title">Strategic Analysis of Accounting</column>
+            <column name="school">Kelley School of Business</column>
+        </table>
+        <table name="degrees">
+            <column name="id"> 54d7b128814f4e1a63de5fd6b25ef6f</column>
+            <column name="link">http://www.law.indiana.edu/degrees/graduate/</column>
+            <column name="title">Law and Social Science</column>
+            <column name="school">Maurer School of Law</column>
+        </table>
+        <table name="degrees">
+            <column name="id"> 54d9e54a814f4e1a63de5fd6d35bdde</column>
+            <column name="link">http://education.indiana.edu/graduate/programs/science-ed/index.html</column>
+            <column name="title">Science Education</column>
+            <column name="school">School of Education</column>
+        </table>
+        <table name="degrees">
+            <column name="id"> 54db7df8814f4e1a63de5fd6f60a5f4</column>
+            <column name="link">http://www.publichealth.indiana.edu/degrees/graduate.shtml</column>
+            <column name="title">Behavioral, Social and Community Health</column>
+            <column name="school">School of Public Health—Bloomington</column>
+        </table>
+        <table name="degrees">
+            <column name="id"> 54dc77e7814f4e1a63de5fd68f7ca20</column>
+            <column name="link">http://www.publichealth.indiana.edu/departments/epidemiology/</column>
+            <column name="title">Biostatistics</column>
+            <column name="school">School of Public Health—Bloomington</column>
+        </table>
+        <table name="degrees">
+            <column name="id"> 54ddc7ec814f4e1a63de5fd68445563</column>
+            <column name="link">http://www.publichealth.indiana.edu/degrees/undergraduate.shtml</column>
+            <column name="title">Community Health</column>
+            <column name="school">School of Public Health—Bloomington</column>
+        </table>
+        <table name="degrees">
+            <column name="id"> 54ded741814f4e1a63de5fd69d9e846</column>
+            <column name="link">http://www.indiana.edu/~mph/</column>
+            <column name="title">Environmental Health</column>
+            <column name="school">School of Public Health—Bloomington</column>
+        </table>
+        <table name="degrees">
+            <column name="id"> 54dfd089814f4e1a63de5fd6649b3b2</column>
+            <column name="link">http://www.publichealth.indiana.edu/departments/epidemiology/</column>
+            <column name="title">Epidemiology</column>
+            <column name="school">School of Public Health—Bloomington</column>
+        </table>
+        <table name="degrees">
+            <column name="id"> 54e08054814f4e1a63de5fd691b6260</column>
+            <column name="link">http://www.publichealth.indiana.edu/degrees/doctoral.shtml</column>
+            <column name="title">Health Behavior</column>
+            <column name="school">School of Public Health—Bloomington</column>
+        </table>
+        <table name="degrees">
+            <column name="id"> 54e1f935814f4e1a63de5fd63397bf2</column>
+            <column name="link">http://www.publichealth.indiana.edu/degrees/doctoral.shtml</column>
+            <column name="title">Human Performance</column>
+            <column name="school">School of Public Health—Bloomington</column>
+        </table>
+        <table name="degrees">
+            <column name="id"> 54e3010e814f4e1a63de5fd67ebd622</column>
+            <column name="link">http://www.publichealth.indiana.edu/departments/recreation-park-tourism-studies/index.shtml</column>
+            <column name="title">Outdoor Recreation, Parks, and Human Ecology</column>
+            <column name="school">School of Public Health—Bloomington</column>
+        </table>
+        <table name="degrees">
+            <column name="id"> 54ffde51814f4e1a63de5fd60543da7</column>
+            <column name="link">http://www.publichealth.indiana.edu/current-students/distance-education/park-public-lands.shtml</column>
+            <column name="title">Park and Public Lands Management</column>
+            <column name="school">School of Public Health—Bloomington</column>
+        </table>
+        <table name="degrees">
+            <column name="id"> 550098b6814f4e1a63de5fd6722ab99</column>
+            <column name="link">http://www.publichealth.indiana.edu/program-areas/health-fitness-specialist/masters.shtml</column>
+            <column name="title">Physical Activity, Fitness and Wellness</column>
+            <column name="school">School of Public Health—Bloomington</column>
+        </table>
+        <table name="degrees">
+            <column name="id"> 5502d632814f4e1a63de5fd67244406</column>
+            <column name="link">http://www.publichealth.indiana.edu/degrees/undergraduate.shtml</column>
+            <column name="title">Public, Nonprofit, and Community Recreation</column>
+            <column name="school">School of Public Health—Bloomington</column>
+        </table>
+        <table name="degrees">
+            <column name="id"> 5503e1aa814f4e1a63de5fd661acdd5</column>
+            <column name="link">http://www.publichealth.indiana.edu/degrees/graduate.shtml</column>
+            <column name="title">Recreation Administration</column>
+            <column name="school">School of Public Health—Bloomington</column>
+        </table>
+        <table name="degrees">
+            <column name="id"> 5504a90e814f4e1a63de5fd6a87556e</column>
+            <column name="link">http://www.publichealth.indiana.edu/degrees/graduate.shtml</column>
+            <column name="title">Recreational Sports Administration</column>
+            <column name="school">School of Public Health—Bloomington</column>
+        </table>
+        <table name="degrees">
+            <column name="id"> 55056bfb814f4e1a63de5fd6987a000</column>
+            <column name="link">http://www.publichealth.indiana.edu/departments/recreation-park-tourism-studies/index.shtml</column>
+            <column name="title">Recreational Therapy</column>
+            <column name="school">School of Public Health—Bloomington</column>
+        </table>
+        <table name="degrees">
+            <column name="id"> 55067481814f4e1a63de5fd6e5f59cd</column>
+            <column name="link">http://www.publichealth.indiana.edu/departments/applied-health-science/degrees/index.shtml</column>
+            <column name="title">Safety</column>
+            <column name="school">School of Public Health—Bloomington</column>
+        </table>
+        <table name="degrees">
+            <column name="id"> 5507e59e814f4e1a63de5fd6e0fe4fa</column>
+            <column name="link">http://www.publichealth.indiana.edu/degrees/undergraduate.shtml#bs-th</column>
+            <column name="title">Tourism, Hospitality, and Event Management</column>
+            <column name="school">School of Public Health—Bloomington</column>
+        </table>
+        <table name="degrees">
+            <column name="id"> 55087247814f4e1a63de5fd67308d5f</column>
+            <column name="link">http://www.publichealth.indiana.edu/degrees/undergraduate.shtml</column>
+            <column name="title">Youth Development</column>
+            <column name="school">School of Public Health—Bloomington</column>
+        </table>
+        <table name="degrees">
+            <column name="id"> 550974e7814f4e1a63de5fd6f89f96c</column>
+            <column name="link">http://grad.medicine.iu.edu/degree-programs/</column>
+            <column name="title">Pathology</column>
+            <column name="school">School of Medicine</column>
+        </table>
+        <table name="degrees">
+            <column name="id"> 550b5c76814f4e1a63de5fd6cbae607</column>
+            <column name="link">https://spea.indiana.edu/masters/degrees-certificates/environmental-science/concentrations/applied-ecology.html</column>
+            <column name="title">Applied Ecology</column>
+            <column name="school">School of Public and Environmental Affairs</column>
+        </table>
+        <table name="degrees">
+            <column name="id"> 550f6dd9814f4e1a63de5fd6752b4d4</column>
+            <column name="link">https://spea.indiana.edu/masters/degrees-certificates/public-affairs/concentrations/energy.html</column>
+            <column name="title">Energy</column>
+            <column name="school">School of Public and Environmental Affairs</column>
+        </table>
+        <table name="degrees">
+            <column name="id"> 551181d4814f4e1a63de5fd65975eea</column>
+            <column name="link">https://spea.indiana.edu/masters/degrees-certificates/environmental-science/concentrations/environmental-chemistry.html</column>
+            <column name="title">Environmental Chemistry, Toxicology and Risk Assessment</column>
+            <column name="school">School of Public and Environmental Affairs</column>
+        </table>
+        <table name="degrees">
+            <column name="id"> 55311906814f4e1a63de5fd6828e631</column>
+            <column name="link">https://spea.indiana.edu/undergraduate/majors-minors-certificates/certificates.html</column>
+            <column name="title">Urban Studies</column>
+            <column name="school">School of Public and Environmental Affairs</column>
+        </table>
+        <table name="degrees">
+            <column name="id"> 5532455a814f4e1a63de5fd6eb0884f</column>
+            <column name="link">https://spea.indiana.edu/masters/degrees-certificates/environmental-science/concentrations/water-resources.html</column>
+            <column name="title">Water Resources</column>
+            <column name="school">School of Public and Environmental Affairs</column>
+        </table>
+        <table name="degrees">
+            <column name="id"> 5eb4a679814f4e1a441b16b527c7415</column>
+            <column name="link">http://www.indiana.edu/~classics/undergraduate/majors.shtml#b</column>
+            <column name="title">Classical Civilization: Art and Archaeology</column>
+            <column name="school">College of Arts and Sciences</column>
+        </table>
+        <table name="degrees">
+            <column name="id"> 78e03bee814f4e1a39b4e557a98f967</column>
+            <column name="link">http://www.publichealth.indiana.edu/degrees/minors.shtml</column>
+            <column name="title">Gerontology</column>
+            <column name="school">School of Public Health—Bloomington</column>
+        </table>
+        <table name="degrees">
+            <column name="id"> 86f8da1c814f4e1a47fff1c39ef73d4</column>
+            <column name="link">http://egyptology.indiana.edu/</column>
+            <column name="title">Egyptology</column>
+            <column name="school">College of Arts and Sciences</column>
+        </table>
+        <table name="degrees">
+            <column name="id"> 8ee7c3a3814f4e1a01f18153d647b23</column>
+            <column name="link">http://www.indiana.edu/~sphs/academics/phd/</column>
+            <column name="title">Auditory Sciences</column>
+            <column name="school">College of Arts and Sciences</column>
+        </table>
+        <table name="degrees">
+            <column name="id"> 8eed0187814f4e1a01f1815381ebb31</column>
+            <column name="link">#</column>
+            <column name="title">Language Sciences (see Speech and Hearing Sciences)</column>
+            <column name="school">College of Arts and Sciences</column>
+        </table>
+        <table name="degrees">
+            <column name="id"> af54ebe5814f4e1a3c5725540773b20</column>
+            <column name="link">http://www.optometry.iu.edu/academics/degrees/index.shtml</column>
+            <column name="title">Optometric Technology/Opticianry</column>
+            <column name="school">School of Optometry</column>
+        </table>
+        <table name="degrees">
+            <column name="id"> af5ff8a4814f4e1a3c5725540da5662</column>
+            <column name="link">https://spea.indiana.edu/undergraduate/majors-minors-certificates/baess.html</column>
+            <column name="title">Environmental and Sustainability Studies</column>
+            <column name="school">School of Public and Environmental Affairs</column>
+        </table>
+        <table name="degrees">
+            <column name="id"> af61cd7a814f4e1a3c572554c01d801</column>
+            <column name="link">https://spea.indiana.edu/undergraduate/majors-minors-certificates/management.html</column>
+            <column name="title">Management</column>
+            <column name="school">School of Public and Environmental Affairs</column>
+        </table>
+        <table name="degrees">
+            <column name="id"> afa19d6a814f4e1a3c5725544c43a49</column>
+            <column name="link">http://www.indiana.edu/~scicomp/index.shtml</column>
+            <column name="title">Scientific Computing</column>
+            <column name="school">College of Arts and Sciences</column>
+        </table>
+        <table name="degrees">
+            <column name="id"> afaeee17814f4e1a3c572554a13abee</column>
+            <column name="link">http://kelley.iupui.edu/undergrad/academics/foundations-certificate/</column>
+            <column name="title">Business Foundations</column>
+            <column name="school">Kelley School of Business</column>
+        </table>
+        <table name="degrees">
+            <column name="id"> afb81245814f4e1a3c5725541ffd472</column>
+            <column name="link">http://www.indiana.edu/~jsp/undergraduates/hebrew.shtml</column>
+            <column name="title">Hebrew</column>
+            <column name="school">College of Arts and Sciences</column>
+        </table>
+        <table name="degrees">
+            <column name="id"> afb96762814f4e1a3c572554f5c4de2</column>
+            <column name="link">http://www.indiana.edu/~germanic/dutch/#yiddish</column>
+            <column name="title">Yiddish</column>
+            <column name="school">College of Arts and Sciences</column>
+        </table>
+        <table name="degrees">
+            <column name="id"> afbac928814f4e1a3c572554a7fb258</column>
+            <column name="link">http://www.indiana.edu/~germanic/dutch/</column>
+            <column name="title">Dutch</column>
+            <column name="school">College of Arts and Sciences</column>
+        </table>
+        <table name="degrees">
+            <column name="id"> afbd2579814f4e1a3c5725547fa4059</column>
+            <column name="link">http://www.indiana.edu/~germanic/dutch/Norwegian.shtml</column>
+            <column name="title">Norwegian</column>
+            <column name="school">College of Arts and Sciences</column>
+        </table>
+        <table name="degrees">
+            <column name="id"> afbe76c6814f4e1a3c572554ef48d7d</column>
+            <column name="link">http://www.indiana.edu/~afrilang/</column>
+            <column name="title">African Languages</column>
+            <column name="school">College of Arts and Sciences</column>
+        </table>
+        <table name="degrees">
+            <column name="id"> b1db96d0814f4e1a53dee19dc5515b8</column>
+            <column name="link">http://www.publichealth.indiana.edu/departments/applied-health-science/degrees/index.shtml</column>
+            <column name="title">Human Development and Family Studies</column>
+            <column name="school">School of Public Health—Bloomington</column>
+        </table>
+        <table name="degrees">
+            <column name="id"> b1dd8bb3814f4e1a53dee19da5793b5</column>
+            <column name="link">http://www.publichealth.indiana.edu/departments/applied-health-science/degrees/index.shtml</column>
+            <column name="title">Health Promotion</column>
+            <column name="school">School of Public Health—Bloomington</column>
+        </table>
+        <table name="degrees">
+            <column name="id"> b1de5e5e814f4e1a53dee19dd861074</column>
+            <column name="link">http://www.publichealth.indiana.edu/departments/applied-health-science/degrees/index.shtml</column>
+            <column name="title">Family Health</column>
+            <column name="school">School of Public Health—Bloomington</column>
+        </table>
+        <table name="degrees">
+            <column name="id"> b1dfbe79814f4e1a53dee19dc71ec6a</column>
+            <column name="link">http://www.publichealth.indiana.edu/departments/applied-health-science/degrees/index.shtml</column>
+            <column name="title">Professional Health Education</column>
+            <column name="school">School of Public Health—Bloomington</column>
+        </table>
+        <table name="degrees">
+            <column name="id"> b1f6fc8e814f4e1a53dee19d8dfbc97</column>
+            <column name="link">http://www.publichealth.indiana.edu/departments/applied-health-science/degrees/index.shtml</column>
+            <column name="title">Global Health Promotion</column>
+            <column name="school">School of Public Health—Bloomington</column>
+        </table>
+        <table name="degrees">
+            <column name="id"> b1f81ef4814f4e1a53dee19d89ea311</column>
+            <column name="link">http://www.publichealth.indiana.edu/departments/applied-health-science/degrees/index.shtml</column>
+            <column name="title">Health Studies</column>
+            <column name="school">School of Public Health—Bloomington</column>
+        </table>
+        <table name="degrees">
+            <column name="id"> b1f8bb99814f4e1a53dee19daa34356</column>
+            <column name="link">http://www.publichealth.indiana.edu/departments/applied-health-science/degrees/index.shtml</column>
+            <column name="title">Human Sexuality</column>
+            <column name="school">School of Public Health—Bloomington</column>
+        </table>
+        <table name="degrees">
+            <column name="id"> b208c153814f4e1a53dee19d2057cf9</column>
+            <column name="link">http://www.publichealth.indiana.edu/departments/applied-health-science/degrees/index.shtml</column>
+            <column name="title">Nutrition</column>
+            <column name="school">School of Public Health—Bloomington</column>
+        </table>
+        <table name="degrees">
+            <column name="id"> b2097e03814f4e1a53dee19dc00b432</column>
+            <column name="link">http://www.publichealth.indiana.edu/departments/applied-health-science/degrees/index.shtml</column>
+            <column name="title">Public Health</column>
+            <column name="school">School of Public Health—Bloomington</column>
+        </table>
+        <table name="degrees">
+            <column name="id"> b8a4e5d0814f4e1a565e858886adad7</column>
+            <column name="link">http://music.indiana.edu/departments/academic/orchestral-conducting/</column>
+            <column name="title">Conducting, Orchestral</column>
+            <column name="school">Jacobs School of Music</column>
+        </table>
+        <table name="degrees">
+            <column name="id"> c759e41b814f4e1a2bc8b2974450715</column>
+            <column name="link">http://cl.indiana.edu/programs.html</column>
+            <column name="title">Computational Linguistics</column>
+            <column name="school">College of Arts and Sciences</column>
+        </table>
+        <table name="degrees">
+            <column name="id"> c76555e7814f4e1a2bc8b2974b208e6</column>
+            <column name="link">https://spea.indiana.edu/undergraduate/majors-minors-certificates/arts-management.html</column>
+            <column name="title">Arts Administration</column>
+            <column name="school">School of Public and Environmental Affairs</column>
+        </table>
+        <table name="degrees">
+            <column name="id"> dae71798814f4e1a013f6d849fab8f4</column>
+            <column name="link">https://spea.indiana.edu/undergraduate/majors-minors-certificates/minors/index.html</column>
+            <column name="title">Health Systems Administration</column>
+            <column name="school">School of Public and Environmental Affairs</column>
+        </table>
+        <table name="degrees">
+            <column name="id"> dae83489814f4e1a013f6d84da81496</column>
+            <column name="link">https://spea.indiana.edu/undergraduate/majors-minors-certificates/human-resource.html</column>
+            <column name="title">Human Resource Management</column>
+            <column name="school">School of Public and Environmental Affairs</column>
+        </table>
+        <table name="degrees">
+            <column name="id"> de71b1da7f4f4e1c015a23045018de2</column>
+            <column name="link">http://pace.indiana.edu/program/</column>
+            <column name="title">Political and Civic Engagement</column>
+            <column name="school">College of Arts and Sciences</column>
+        </table>
+        <table name="degrees">
+            <column name="id"> e2a0c4bb7f4f4e1c015b393a057f2a1</column>
+            <column name="link">http://www.indiana.edu/~victstu/</column>
+            <column name="title">Victorian Studies</column>
+            <column name="school">College of Arts and Sciences</column>
+        </table>
+        <table name="degrees">
+            <column name="id"> e585a177814f4e1a0c5a72913a826c2</column>
+            <column name="link">https://spea.indiana.edu/masters/degrees-certificates/certificates.html</column>
+            <column name="title">Hazardous Materials Management</column>
+            <column name="school">School of Public and Environmental Affairs</column>
+        </table>
+        <table name="degrees">
+            <column name="id"> e5877f2f814f4e1a0c5a72916fdb5dd</column>
+            <column name="link">https://spea.indiana.edu/masters/degrees-certificates/public-affairs/concentrations/health-policy.html</column>
+            <column name="title">Health Policy</column>
+            <column name="school">School of Public and Environmental Affairs</column>
+        </table>
+        <table name="degrees">
+            <column name="id"> e5880c80814f4e1a0c5a72914a905a9</column>
+            <column name="link">https://spea.indiana.edu/masters/degrees-certificates/public-affairs/concentrations/information-systems.html</column>
+            <column name="title">Information Systems</column>
+            <column name="school">School of Public and Environmental Affairs</column>
+        </table>
+        <table name="degrees">
+            <column name="id"> e5b008b4814f4e1a0c5a7291d3fb945</column>
+            <column name="link">https://spea.indiana.edu/masters/degrees-certificates/public-affairs/concentrations/sustainability.html</column>
+            <column name="title">Sustainability and Sustainable Development</column>
+            <column name="school">School of Public and Environmental Affairs</column>
+        </table>
         <table name="degrees">
             <column name="id"> ee4b240f7f4f4e1a010c986053a5394</column>
             <column name="link">http://www.kelley.iu.edu/accounting/</column>
@@ -60,12 +673,6 @@
             <column name="id"> f204dc497f4f4e1a010c986003341de</column>
             <column name="link">http://www.indiana.edu/~soc/ug_degree.html#Afro</column>
             <column name="title">African American Studies and Sociology</column>
-            <column name="school">College of Arts and Sciences</column>
-        </table>
-        <table name="degrees">
-            <column name="id"> afbe76c6814f4e1a3c572554ef48d7d</column>
-            <column name="link">http://www.indiana.edu/~afrilang/</column>
-            <column name="title">African Languages</column>
             <column name="school">College of Arts and Sciences</column>
         </table>
         <table name="degrees">
@@ -111,12 +718,6 @@
             <column name="school">College of Arts and Sciences</column>
         </table>
         <table name="degrees">
-            <column name="id"> 550b5c76814f4e1a63de5fd6cbae607</column>
-            <column name="link">https://spea.indiana.edu/masters/degrees-certificates/environmental-science/concentrations/applied-ecology.html</column>
-            <column name="title">Applied Ecology</column>
-            <column name="school">School of Public and Environmental Affairs</column>
-        </table>
-        <table name="degrees">
             <column name="id"> f21fcfbb7f4f4e1a010c9860db56e7b</column>
             <column name="link">http://www.publichealth.indiana.edu/departments/applied-health-science/index.shtml</column>
             <column name="title">Applied Health Science</column>
@@ -129,32 +730,14 @@
             <column name="school">School of Public Health—Bloomington</column>
         </table>
         <table name="degrees">
-            <column name="id"> 409c2883814f4e1a26d5758ea92058d</column>
-            <column name="link">http://education.indiana.edu/graduate/programs/art-ed/index.html</column>
-            <column name="title">Art Education (graduate)</column>
-            <column name="school">School of Education</column>
-        </table>
-        <table name="degrees">
             <column name="id"> f22340647f4f4e1a010c98606fd06b0</column>
             <column name="link">http://education.indiana.edu/undergraduate/programs/art.html</column>
             <column name="title">Art Education (undergraduate)</column>
             <column name="school">School of Education</column>
         </table>
         <table name="degrees">
-            <column name="id"> fc8064647f4f4e1a010c98608157d29</column>
-            <column name="link">#</column>
-            <column name="title">Art History (see History of Art)</column>
-            <column name="school"></column>
-        </table>
-        <table name="degrees">
             <column name="id"> f224de117f4f4e1a010c98604a1fa13</column>
             <column name="link">https://spea.indiana.edu/masters/degrees-certificates/arts-administration/index.html</column>
-            <column name="title">Arts Administration</column>
-            <column name="school">School of Public and Environmental Affairs</column>
-        </table>
-        <table name="degrees">
-            <column name="id"> c76555e7814f4e1a2bc8b2974b208e6</column>
-            <column name="link">https://spea.indiana.edu/undergraduate/majors-minors-certificates/arts-management.html</column>
             <column name="title">Arts Administration</column>
             <column name="school">School of Public and Environmental Affairs</column>
         </table>
@@ -183,33 +766,9 @@
             <column name="school">School of Public Health—Bloomington</column>
         </table>
         <table name="degrees">
-            <column name="id"> 54b297b8814f4e1a63de5fd6ebe2309</column>
-            <column name="link">http://www.geology.indiana.edu/education/bs-atmos.html</column>
-            <column name="title">Atmospheric Science</column>
-            <column name="school">College of Arts and Sciences</column>
-        </table>
-        <table name="degrees">
-            <column name="id"> fc80ee8c7f4f4e1a010c98602f7563a</column>
-            <column name="link">#</column>
-            <column name="title">Audio Recording (see Recording Arts)</column>
-            <column name="school"></column>
-        </table>
-        <table name="degrees">
-            <column name="id"> fc815a137f4f4e1a010c986002c5b90</column>
-            <column name="link">#</column>
-            <column name="title">Audio Technology (see Recording Arts)</column>
-            <column name="school"></column>
-        </table>
-        <table name="degrees">
             <column name="id"> f22d467a7f4f4e1a010c98600013d1e</column>
             <column name="link">http://www.indiana.edu/~sphs/</column>
             <column name="title">Audiology and Hearing Science</column>
-            <column name="school">College of Arts and Sciences</column>
-        </table>
-        <table name="degrees">
-            <column name="id"> 8ee7c3a3814f4e1a01f18153d647b23</column>
-            <column name="link">http://www.indiana.edu/~sphs/academics/phd/</column>
-            <column name="title">Auditory Sciences</column>
             <column name="school">College of Arts and Sciences</column>
         </table>
         <table name="degrees">
@@ -219,33 +778,15 @@
             <column name="school">Jacobs School of Music</column>
         </table>
         <table name="degrees">
-            <column name="id"> fc81feb57f4f4e1a010c986011b5d3e</column>
-            <column name="link">#</column>
-            <column name="title">Band (see Conducting, Wind)</column>
-            <column name="school"></column>
-        </table>
-        <table name="degrees">
             <column name="id"> f2306d777f4f4e1a010c9860de6d120</column>
             <column name="link">http://music.indiana.edu/departments/academic/woodwinds/areas/bassoon/</column>
             <column name="title">Bassoon</column>
             <column name="school">Jacobs School of Music</column>
         </table>
         <table name="degrees">
-            <column name="id"> 54db7df8814f4e1a63de5fd6f60a5f4</column>
-            <column name="link">http://www.publichealth.indiana.edu/degrees/graduate.shtml</column>
-            <column name="title">Behavioral, Social and Community Health</column>
-            <column name="school">School of Public Health—Bloomington</column>
-        </table>
-        <table name="degrees">
             <column name="id"> f23483f77f4f4e1a010c98608c12ef3</column>
             <column name="link">http://www.chem.indiana.edu/undergraduate/</column>
             <column name="title">Biochemistry (undergraduate)</column>
-            <column name="school">College of Arts and Sciences</column>
-        </table>
-        <table name="degrees">
-            <column name="id"> f2a1beec7f4f4e1a010c98605ddfeeb</column>
-            <column name="link">http://www.indiana.edu/~bchem/</column>
-            <column name="title">Biochemistry (graduate)</column>
             <column name="school">College of Arts and Sciences</column>
         </table>
         <table name="degrees">
@@ -264,12 +805,6 @@
             <column name="id"> f23785937f4f4e1a010c986020d5d4a</column>
             <column name="link">http://www.publichealth.indiana.edu/program-areas/biomechanics/index.shtml</column>
             <column name="title">Biomechanics</column>
-            <column name="school">School of Public Health—Bloomington</column>
-        </table>
-        <table name="degrees">
-            <column name="id"> 54dc77e7814f4e1a63de5fd68f7ca20</column>
-            <column name="link">http://www.publichealth.indiana.edu/departments/epidemiology/</column>
-            <column name="title">Biostatistics</column>
             <column name="school">School of Public Health—Bloomington</column>
         </table>
         <table name="degrees">
@@ -297,24 +832,6 @@
             <column name="school">Kelley School of Business</column>
         </table>
         <table name="degrees">
-            <column name="id"> 54d017e3814f4e1a63de5fd67e1f675</column>
-            <column name="link">http://www.kelley.iu.edu/ODT/AboutUs/DecisionSciences/page11147.html</column>
-            <column name="title">Business Analytics</column>
-            <column name="school">Kelley School of Business</column>
-        </table>
-        <table name="degrees">
-            <column name="id"> 452b19a57f4f4e1a01ba4b540fed599</column>
-            <column name="link">http://kelley.iu.edu/BEPP/Doctoral/page14133.html</column>
-            <column name="title">Business Economics</column>
-            <column name="school">Kelley School of Business</column>
-        </table>
-        <table name="degrees">
-            <column name="id"> afaeee17814f4e1a3c572554a13abee</column>
-            <column name="link">http://kelley.iupui.edu/undergrad/academics/foundations-certificate/</column>
-            <column name="title">Business Foundations</column>
-            <column name="school">Kelley School of Business</column>
-        </table>
-        <table name="degrees">
             <column name="id"> f23d61b47f4f4e1a010c986098951e8</column>
             <column name="link">http://music.indiana.edu/departments/academic/strings/</column>
             <column name="title">Cello</column>
@@ -339,12 +856,6 @@
             <column name="school">School of Informatics and Computing</column>
         </table>
         <table name="degrees">
-            <column name="id"> f2a2f3a17f4f4e1a010c9860d662fe8</column>
-            <column name="link">http://www.chemphys.indiana.edu/</column>
-            <column name="title">Chemical Physics</column>
-            <column name="school">College of Arts and Sciences</column>
-        </table>
-        <table name="degrees">
             <column name="id"> f24280f27f4f4e1a010c98605e712e7</column>
             <column name="link">http://chem.indiana.edu/</column>
             <column name="title">Chemistry</column>
@@ -355,12 +866,6 @@
             <column name="link">http://music.indiana.edu/departments/academic/woodwinds/areas/clarinet/</column>
             <column name="title">Clarinet</column>
             <column name="school">Jacobs School of Music</column>
-        </table>
-        <table name="degrees">
-            <column name="id"> 5eb4a679814f4e1a441b16b527c7415</column>
-            <column name="link">http://www.indiana.edu/~classics/undergraduate/majors.shtml#b</column>
-            <column name="title">Classical Civilization: Art and Archaeology</column>
-            <column name="school">College of Arts and Sciences</column>
         </table>
         <table name="degrees">
             <column name="id"> f2449e307f4f4e1a010c9860264dcab</column>
@@ -387,12 +892,6 @@
             <column name="school">College of Arts and Sciences</column>
         </table>
         <table name="degrees">
-            <column name="id"> 54ddc7ec814f4e1a63de5fd68445563</column>
-            <column name="link">http://www.publichealth.indiana.edu/degrees/undergraduate.shtml</column>
-            <column name="title">Community Health</column>
-            <column name="school">School of Public Health—Bloomington</column>
-        </table>
-        <table name="degrees">
             <column name="id"> f24ab5a47f4f4e1a010c98600af3984</column>
             <column name="link">http://www.indiana.edu/~complit/</column>
             <column name="title">Comparative Literature</column>
@@ -403,12 +902,6 @@
             <column name="link">http://music.indiana.edu/departments/academic/composition/</column>
             <column name="title">Composition</column>
             <column name="school">Jacobs School of Music</column>
-        </table>
-        <table name="degrees">
-            <column name="id"> c759e41b814f4e1a2bc8b2974450715</column>
-            <column name="link">http://cl.indiana.edu/programs.html</column>
-            <column name="title">Computational Linguistics</column>
-            <column name="school">College of Arts and Sciences</column>
         </table>
         <table name="degrees">
             <column name="id"> f24d028e7f4f4e1a010c9860c822af5</column>
@@ -426,12 +919,6 @@
             <column name="id"> f24e7b777f4f4e1a010c9860d51c029</column>
             <column name="link">http://music.indiana.edu/departments/academic/choral/</column>
             <column name="title">Conducting, Choral</column>
-            <column name="school">Jacobs School of Music</column>
-        </table>
-        <table name="degrees">
-            <column name="id"> b8a4e5d0814f4e1a565e858886adad7</column>
-            <column name="link">http://music.indiana.edu/departments/academic/orchestral-conducting/</column>
-            <column name="title">Conducting, Orchestral</column>
             <column name="school">Jacobs School of Music</column>
         </table>
         <table name="degrees">
@@ -483,22 +970,10 @@
             <column name="school">College of Arts and Sciences</column>
         </table>
         <table name="degrees">
-            <column name="id"> 4529ac1a7f4f4e1a01ba4b54f2da0e6</column>
-            <column name="link">http://kelley.iu.edu/odt/</column>
-            <column name="title">Decision Sciences</column>
-            <column name="school">Kelley School of Business</column>
-        </table>
-        <table name="degrees">
             <column name="id"> f25a2f1f7f4f4e1a010c9860f715641</column>
             <column name="link">http://www.publichealth.indiana.edu/degrees/undergraduate.shtml</column>
             <column name="title">Dietetics</column>
             <column name="school">School of Public Health—Bloomington</column>
-        </table>
-        <table name="degrees">
-            <column name="id"> 4558d7cd7f4f4e1a01ba4b54a4edb4f</column>
-            <column name="link">http://www.indiana.edu/~finaweb/test/cms/fina/areas/digital-art/</column>
-            <column name="title">Digital Art</column>
-            <column name="school">College of Arts and Sciences</column>
         </table>
         <table name="degrees">
             <column name="id"> f25badae7f4f4e1a010c9860decfd05</column>
@@ -511,18 +986,6 @@
             <column name="link">#</column>
             <column name="title">Drama (see Theatre and Drama)</column>
             <column name="school">College of Arts and Sciences</column>
-        </table>
-        <table name="degrees">
-            <column name="id"> afbac928814f4e1a3c572554a7fb258</column>
-            <column name="link">http://www.indiana.edu/~germanic/dutch/</column>
-            <column name="title">Dutch</column>
-            <column name="school">College of Arts and Sciences</column>
-        </table>
-        <table name="degrees">
-            <column name="id"> 3281d7f3814f4e1a3d289d5e9f91cdb</column>
-            <column name="link">http://education.indiana.edu/graduate/programs/early-childhood/index.html</column>
-            <column name="title">Early Childhood Education (graduate)</column>
-            <column name="school">School of Education</column>
         </table>
         <table name="degrees">
             <column name="id"> f26116a87f4f4e1a010c9860ac0b050</column>
@@ -549,18 +1012,6 @@
             <column name="school">College of Arts and Sciences</column>
         </table>
         <table name="degrees">
-            <column name="id"> 450da3f67f4f4e1a01ba4b54c876c5e</column>
-            <column name="link">http://kelley.iu.edu/bepp/undergraduate/page14634.html</column>
-            <column name="title">Economic Consulting</column>
-            <column name="school">Kelley School of Business</column>
-        </table>
-        <table name="degrees">
-            <column name="id"> 521247467f4f4e1c00d2fa99f03bbc1</column>
-            <column name="link">https://spea.indiana.edu/masters/degrees-certificates/public-affairs/concentrations/economic-development.html</column>
-            <column name="title">Economic Development</column>
-            <column name="school">School of Public and Environmental Affairs</column>
-        </table>
-        <table name="degrees">
             <column name="id"> f26c3e297f4f4e1a010c9860fd5dacf</column>
             <column name="link">http://www.indiana.edu/~econweb/</column>
             <column name="title">Economics</column>
@@ -571,12 +1022,6 @@
             <column name="link">http://www.math.indiana.edu/undergraduate/econmath.phtml</column>
             <column name="title">Economics / Mathematic</column>
             <column name="school">College of Arts and Sciences</column>
-        </table>
-        <table name="degrees">
-            <column name="id"> fc82d3907f4f4e1a010c98607049704</column>
-            <column name="link">#</column>
-            <column name="title">Ecosystem Science (see Environmental Science)</column>
-            <column name="school"></column>
         </table>
         <table name="degrees">
             <column name="id"> f271525b7f4f4e1a010c9860ce7f272</column>
@@ -597,34 +1042,10 @@
             <column name="school">School of Education</column>
         </table>
         <table name="degrees">
-            <column name="id"> 86f8da1c814f4e1a47fff1c39ef73d4</column>
-            <column name="link">http://egyptology.indiana.edu/</column>
-            <column name="title">Egyptology</column>
-            <column name="school">College of Arts and Sciences</column>
-        </table>
-        <table name="degrees">
-            <column name="id"> fc8339527f4f4e1a010c9860c803ff4</column>
-            <column name="link">#</column>
-            <column name="title">Electronic and Computer Music (see Computer Music Composition)</column>
-            <column name="school"></column>
-        </table>
-        <table name="degrees">
-            <column name="id"> 40ab2f45814f4e1a26d5758e4947551</column>
-            <column name="link">http://education.indiana.edu/graduate/programs/elementary-ed/index.html</column>
-            <column name="title">Elementary Education (graduate)</column>
-            <column name="school">School of Education</column>
-        </table>
-        <table name="degrees">
             <column name="id"> f275709d7f4f4e1a010c9860b06644d</column>
             <column name="link">http://education.indiana.edu/undergraduate/programs/elementary.html</column>
             <column name="title">Elementary Education (undergraduate)</column>
             <column name="school">School of Education</column>
-        </table>
-        <table name="degrees">
-            <column name="id"> 550f6dd9814f4e1a63de5fd6752b4d4</column>
-            <column name="link">https://spea.indiana.edu/masters/degrees-certificates/public-affairs/concentrations/energy.html</column>
-            <column name="title">Energy</column>
-            <column name="school">School of Public and Environmental Affairs</column>
         </table>
         <table name="degrees">
             <column name="id"> f2765f197f4f4e1a010c986088a7af3</column>
@@ -639,33 +1060,9 @@
             <column name="school">Kelley School of Business</column>
         </table>
         <table name="degrees">
-            <column name="id"> 54d3fbf4814f4e1a63de5fd67a1ab28</column>
-            <column name="link">http://kelley.iu.edu/Management/Masters/requirements/page14588.html#entrepreneurship</column>
-            <column name="title">Entrepreneurship and Corporate Innovation</column>
-            <column name="school">Kelley School of Business</column>
-        </table>
-        <table name="degrees">
-            <column name="id"> 551181d4814f4e1a63de5fd65975eea</column>
-            <column name="link">https://spea.indiana.edu/masters/degrees-certificates/environmental-science/concentrations/environmental-chemistry.html</column>
-            <column name="title">Environmental Chemistry, Toxicology and Risk Assessment</column>
-            <column name="school">School of Public and Environmental Affairs</column>
-        </table>
-        <table name="degrees">
-            <column name="id"> 54ded741814f4e1a63de5fd69d9e846</column>
-            <column name="link">http://www.indiana.edu/~mph/</column>
-            <column name="title">Environmental Health</column>
-            <column name="school">School of Public Health—Bloomington</column>
-        </table>
-        <table name="degrees">
             <column name="id"> f2798c667f4f4e1a010c9860881e5b5</column>
             <column name="link">https://spea.indiana.edu/undergraduate/majors-minors-certificates/environmental-management.html</column>
             <column name="title">Environmental Management</column>
-            <column name="school">School of Public and Environmental Affairs</column>
-        </table>
-        <table name="degrees">
-            <column name="id"> 5213a3007f4f4e1c00d2fa99aaab8d5</column>
-            <column name="link">https://spea.indiana.edu/masters/degrees-certificates/public-affairs/concentrations/environmental-policy.html</column>
-            <column name="title">Environmental Policy and Natural Resource Management</column>
             <column name="school">School of Public and Environmental Affairs</column>
         </table>
         <table name="degrees">
@@ -673,18 +1070,6 @@
             <column name="link">https://spea.indiana.edu/undergraduate/majors-minors-certificates/environmental-science.html</column>
             <column name="title">Environmental Science</column>
             <column name="school">School of Public and Environmental Affairs</column>
-        </table>
-        <table name="degrees">
-            <column name="id"> af5ff8a4814f4e1a3c5725540da5662</column>
-            <column name="link">https://spea.indiana.edu/undergraduate/majors-minors-certificates/baess.html</column>
-            <column name="title">Environmental and Sustainability Studies</column>
-            <column name="school">School of Public and Environmental Affairs</column>
-        </table>
-        <table name="degrees">
-            <column name="id"> 54dfd089814f4e1a63de5fd6649b3b2</column>
-            <column name="link">http://www.publichealth.indiana.edu/departments/epidemiology/</column>
-            <column name="title">Epidemiology</column>
-            <column name="school">School of Public Health—Bloomington</column>
         </table>
         <table name="degrees">
             <column name="id"> f27b3e447f4f4e1a010c9860be6755b</column>
@@ -705,18 +1090,6 @@
             <column name="school">Jacobs School of Music</column>
         </table>
         <table name="degrees">
-            <column name="id"> f7c699f37f4f4e1c01928b7c2b3ce63</column>
-            <column name="link">http://www.iub.edu/~euroinst/academics</column>
-            <column name="title">European Studies</column>
-            <column name="school">College of Arts and Sciences</column>
-        </table>
-        <table name="degrees">
-            <column name="id"> 54b696bd814f4e1a63de5fd6fc77eef</column>
-            <column name="link">http://www.bio.indiana.edu/graduate/eeb/</column>
-            <column name="title">Evolution, Ecology and Behavior</column>
-            <column name="school">College of Arts and Sciences</column>
-        </table>
-        <table name="degrees">
             <column name="id"> f27d49e07f4f4e1a010c98603bc408d</column>
             <column name="link">http://www.publichealth.indiana.edu/program-areas/exercise-science/masters.shtml</column>
             <column name="title">Exercise Physiology</column>
@@ -726,12 +1099,6 @@
             <column name="id"> f27e0f5e7f4f4e1a010c98604dfc590</column>
             <column name="link">http://www.publichealth.indiana.edu/program-areas/exercise-science/</column>
             <column name="title">Exercise Science</column>
-            <column name="school">School of Public Health—Bloomington</column>
-        </table>
-        <table name="degrees">
-            <column name="id"> b1de5e5e814f4e1a53dee19dd861074</column>
-            <column name="link">http://www.publichealth.indiana.edu/departments/applied-health-science/degrees/index.shtml</column>
-            <column name="title">Family Health</column>
             <column name="school">School of Public Health—Bloomington</column>
         </table>
         <table name="degrees">
@@ -745,6 +1112,12 @@
             <column name="link">http://www.kelley.iu.edu/finance/</column>
             <column name="title">Finance</column>
             <column name="school">Kelley School of Business</column>
+        </table>
+        <table name="degrees">
+            <column name="id"> f28155c37f4f4e1a010c9860dd49b38</column>
+            <column name="link">http://www.publichealth.indiana.edu/degrees/undergraduate.shtml</column>
+            <column name="title">Health Fitness Specialist</column>
+            <column name="school">School of Public Health—Bloomington</column>
         </table>
         <table name="degrees">
             <column name="id"> f281ea7e7f4f4e1a010c986084dc198</column>
@@ -765,12 +1138,6 @@
             <column name="school">College of Arts and Sciences</column>
         </table>
         <table name="degrees">
-            <column name="id"> 54b866d6814f4e1a63de5fd6d494ba2</column>
-            <column name="link">http://www.indiana.edu/~telecom/undergraduate/certificate_game.shtml</column>
-            <column name="title">Game Studies</column>
-            <column name="school">College of Arts and Sciences</column>
-        </table>
-        <table name="degrees">
             <column name="id"> f28445dd7f4f4e1a010c9860fda4bcc</column>
             <column name="link">http://www.indiana.edu/~gender/</column>
             <column name="title">Gender Studies</column>
@@ -780,12 +1147,6 @@
             <column name="id"> f2859c477f4f4e1a010c98605ca21e9</column>
             <column name="link">http://college.indiana.edu/ado/bgs/</column>
             <column name="title">General Studies (Bloomington campus program)</column>
-            <column name="school">College of Arts and Sciences</column>
-        </table>
-        <table name="degrees">
-            <column name="id"> 54b9cc3c814f4e1a63de5fd61217cf5</column>
-            <column name="link">http://www.bio.indiana.edu/graduate/mcdb/</column>
-            <column name="title">Genetics</column>
             <column name="school">College of Arts and Sciences</column>
         </table>
         <table name="degrees">
@@ -807,28 +1168,10 @@
             <column name="school">College of Arts and Sciences</column>
         </table>
         <table name="degrees">
-            <column name="id"> 78e03bee814f4e1a39b4e557a98f967</column>
-            <column name="link">http://www.publichealth.indiana.edu/degrees/minors.shtml</column>
-            <column name="title">Gerontology</column>
-            <column name="school">School of Public Health—Bloomington</column>
-        </table>
-        <table name="degrees">
-            <column name="id"> b1f6fc8e814f4e1a53dee19d8dfbc97</column>
-            <column name="link">http://www.publichealth.indiana.edu/departments/applied-health-science/degrees/index.shtml</column>
-            <column name="title">Global Health Promotion</column>
-            <column name="school">School of Public Health—Bloomington</column>
-        </table>
-        <table name="degrees">
             <column name="id"> f289663a7f4f4e1a010c98602a9cae0</column>
             <column name="link">http://www.indiana.edu/~global/academic/minor.php</column>
             <column name="title">Global Studies</column>
             <column name="school">College of Arts and Sciences</column>
-        </table>
-        <table name="degrees">
-            <column name="id"> 450a79567f4f4e1a01ba4b54cd18281</column>
-            <column name="link">http://kelley.iu.edu/onlineMBA/Online/MSGSCM/page36795.cfm</column>
-            <column name="title">Global Supply Chain Management (online program)</column>
-            <column name="school">Kelley School of Business</column>
         </table>
         <table name="degrees">
             <column name="id"> f289db0a7f4f4e1a010c986080b8185</column>
@@ -855,70 +1198,10 @@
             <column name="school">Jacobs School of Music</column>
         </table>
         <table name="degrees">
-            <column name="id"> fc83947d7f4f4e1a010c9860ca14959</column>
-            <column name="link">#</column>
-            <column name="title">Hazard Control Technology (see Safety Management)</column>
-            <column name="school"></column>
-        </table>
-        <table name="degrees">
-            <column name="id"> e585a177814f4e1a0c5a72913a826c2</column>
-            <column name="link">https://spea.indiana.edu/masters/degrees-certificates/certificates.html</column>
-            <column name="title">Hazardous Materials Management</column>
-            <column name="school">School of Public and Environmental Affairs</column>
-        </table>
-        <table name="degrees">
-            <column name="id"> 54e08054814f4e1a63de5fd691b6260</column>
-            <column name="link">http://www.publichealth.indiana.edu/degrees/doctoral.shtml</column>
-            <column name="title">Health Behavior</column>
-            <column name="school">School of Public Health—Bloomington</column>
-        </table>
-        <table name="degrees">
             <column name="id"> f28d6a0a7f4f4e1a010c9860eb547f4</column>
             <column name="link">http://www.publichealth.indiana.edu/degrees/undergraduate.shtml</column>
             <column name="title">Health Education - Secondary Teacher Preparation</column>
             <column name="school">School of Public Health—Bloomington</column>
-        </table>
-        <table name="degrees">
-            <column name="id"> f28155c37f4f4e1a010c9860dd49b38</column>
-            <column name="link">http://www.publichealth.indiana.edu/degrees/undergraduate.shtml</column>
-            <column name="title">Health Fitness Specialist</column>
-            <column name="school">School of Public Health—Bloomington</column>
-        </table>
-        <table name="degrees">
-            <column name="id"> e5877f2f814f4e1a0c5a72916fdb5dd</column>
-            <column name="link">https://spea.indiana.edu/masters/degrees-certificates/public-affairs/concentrations/health-policy.html</column>
-            <column name="title">Health Policy</column>
-            <column name="school">School of Public and Environmental Affairs</column>
-        </table>
-        <table name="degrees">
-            <column name="id"> b1dd8bb3814f4e1a53dee19da5793b5</column>
-            <column name="link">http://www.publichealth.indiana.edu/departments/applied-health-science/degrees/index.shtml</column>
-            <column name="title">Health Promotion</column>
-            <column name="school">School of Public Health—Bloomington</column>
-        </table>
-        <table name="degrees">
-            <column name="id"> b1f81ef4814f4e1a53dee19d89ea311</column>
-            <column name="link">http://www.publichealth.indiana.edu/departments/applied-health-science/degrees/index.shtml</column>
-            <column name="title">Health Studies</column>
-            <column name="school">School of Public Health—Bloomington</column>
-        </table>
-        <table name="degrees">
-            <column name="id"> dae71798814f4e1a013f6d849fab8f4</column>
-            <column name="link">https://spea.indiana.edu/undergraduate/majors-minors-certificates/minors/index.html</column>
-            <column name="title">Health Systems Administration</column>
-            <column name="school">School of Public and Environmental Affairs</column>
-        </table>
-        <table name="degrees">
-            <column name="id"> 2432db3d814f4e1a6c596c2a4301b97</column>
-            <column name="link">https://spea.indiana.edu/undergraduate/majors-minors-certificates/healthcare-management.html</column>
-            <column name="title">Healthcare Management and Policy</column>
-            <column name="school">School of Public and Environmental Affairs</column>
-        </table>
-        <table name="degrees">
-            <column name="id"> afb81245814f4e1a3c5725541ffd472</column>
-            <column name="link">http://www.indiana.edu/~jsp/undergraduates/hebrew.shtml</column>
-            <column name="title">Hebrew</column>
-            <column name="school">College of Arts and Sciences</column>
         </table>
         <table name="degrees">
             <column name="id"> f28ed7367f4f4e1a010c9860f545790</column>
@@ -930,12 +1213,6 @@
             <column name="id"> f28f59487f4f4e1a010c9860887e329</column>
             <column name="link">http://www.indiana.edu/~histweb/</column>
             <column name="title">History</column>
-            <column name="school">College of Arts and Sciences</column>
-        </table>
-        <table name="degrees">
-            <column name="id"> 4557338d7f4f4e1a01ba4b544f76e6f</column>
-            <column name="link">http://www.indiana.edu/~arthist/</column>
-            <column name="title">History of Art</column>
             <column name="school">College of Arts and Sciences</column>
         </table>
         <table name="degrees">
@@ -975,40 +1252,22 @@
             <column name="school">School of Education</column>
         </table>
         <table name="degrees">
-            <column name="id"> b1db96d0814f4e1a53dee19dc5515b8</column>
-            <column name="link">http://www.publichealth.indiana.edu/departments/applied-health-science/degrees/index.shtml</column>
-            <column name="title">Human Development and Family Studies</column>
-            <column name="school">School of Public Health—Bloomington</column>
+            <column name="id"> f2a1beec7f4f4e1a010c98605ddfeeb</column>
+            <column name="link">http://www.indiana.edu/~bchem/</column>
+            <column name="title">Biochemistry (graduate)</column>
+            <column name="school">College of Arts and Sciences</column>
         </table>
         <table name="degrees">
-            <column name="id"> 54e1f935814f4e1a63de5fd63397bf2</column>
-            <column name="link">http://www.publichealth.indiana.edu/degrees/doctoral.shtml</column>
-            <column name="title">Human Performance</column>
-            <column name="school">School of Public Health—Bloomington</column>
+            <column name="id"> f2a2f3a17f4f4e1a010c9860d662fe8</column>
+            <column name="link">http://www.chemphys.indiana.edu/</column>
+            <column name="title">Chemical Physics</column>
+            <column name="school">College of Arts and Sciences</column>
         </table>
         <table name="degrees">
             <column name="id"> f2aa19417f4f4e1a010c9860c94f75b</column>
             <column name="link">http://kelley.iu.edu/Management/Doctoral/page14579.html</column>
             <column name="title">Human Resource Management</column>
             <column name="school">Kelley School of Business</column>
-        </table>
-        <table name="degrees">
-            <column name="id"> dae83489814f4e1a013f6d84da81496</column>
-            <column name="link">https://spea.indiana.edu/undergraduate/majors-minors-certificates/human-resource.html</column>
-            <column name="title">Human Resource Management</column>
-            <column name="school">School of Public and Environmental Affairs</column>
-        </table>
-        <table name="degrees">
-            <column name="id"> b1f8bb99814f4e1a53dee19daa34356</column>
-            <column name="link">http://www.publichealth.indiana.edu/departments/applied-health-science/degrees/index.shtml</column>
-            <column name="title">Human Sexuality</column>
-            <column name="school">School of Public Health—Bloomington</column>
-        </table>
-        <table name="degrees">
-            <column name="id"> fc85717b7f4f4e1a010c98604ce9994</column>
-            <column name="link">#</column>
-            <column name="title">Hydrology and Water Resources (see Environmental Science)</column>
-            <column name="school"></column>
         </table>
         <table name="degrees">
             <column name="id"> f2ace03e7f4f4e1a010c9860475685e</column>
@@ -1035,10 +1294,10 @@
             <column name="school">School of Informatics and Computing</column>
         </table>
         <table name="degrees">
-            <column name="id"> 452569827f4f4e1a01ba4b54ce5b73a</column>
-            <column name="link">http://kelley.iu.edu/Ugrad/Academics/Curriculum/page39589.html</column>
-            <column name="title">Information and Process Management</column>
-            <column name="school">Kelley School of Business</column>
+            <column name="id"> f2b0188e7f4f4e1a010c986082789ec</column>
+            <column name="link">http://www.soic.indiana.edu/graduate/degrees/information-library-science/master-information-science/index.html</column>
+            <column name="title">Information Science</column>
+            <column name="school">School of Informatics and Computing</column>
         </table>
         <table name="degrees">
             <column name="id"> f2b0c4897f4f4e1a010c98606c9a393</column>
@@ -1047,22 +1306,10 @@
             <column name="school">School of Informatics and Computing</column>
         </table>
         <table name="degrees">
-            <column name="id"> f2b0188e7f4f4e1a010c986082789ec</column>
-            <column name="link">http://www.soic.indiana.edu/graduate/degrees/information-library-science/master-information-science/index.html</column>
-            <column name="title">Information Science</column>
-            <column name="school">School of Informatics and Computing</column>
-        </table>
-        <table name="degrees">
             <column name="id"> f2b16ac87f4f4e1a010c9860c91f7d9</column>
             <column name="link">http://www.kelley.iu.edu/isgp/</column>
             <column name="title">Information Systems</column>
             <column name="school">Kelley School of Business</column>
-        </table>
-        <table name="degrees">
-            <column name="id"> e5880c80814f4e1a0c5a72914a905a9</column>
-            <column name="link">https://spea.indiana.edu/masters/degrees-certificates/public-affairs/concentrations/information-systems.html</column>
-            <column name="title">Information Systems</column>
-            <column name="school">School of Public and Environmental Affairs</column>
         </table>
         <table name="degrees">
             <column name="id"> f2b29a8c7f4f4e1a010c98609279d38</column>
@@ -1077,12 +1324,6 @@
             <column name="school">School of Education</column>
         </table>
         <table name="degrees">
-            <column name="id"> fc85c4e47f4f4e1a010c986095a11ca</column>
-            <column name="link">#</column>
-            <column name="title">Instrumental Teaching (see Music Education)</column>
-            <column name="school"></column>
-        </table>
-        <table name="degrees">
             <column name="id"> f2b45e767f4f4e1a010c98608905f71</column>
             <column name="link">http://design.iub.edu/dsg/</column>
             <column name="title">Interior Design</column>
@@ -1093,12 +1334,6 @@
             <column name="link">http://kelley.iu.edu/Ugrad/Academics/Curriculum/page39590.html</column>
             <column name="title">International Business (co-major only)</column>
             <column name="school">Kelley School of Business</column>
-        </table>
-        <table name="degrees">
-            <column name="id"> 520a736c7f4f4e1c00d2fa99ff722ac</column>
-            <column name="link">https://spea.indiana.edu/masters/degrees-certificates/public-affairs/concentrations/international-development.html</column>
-            <column name="title">International Development</column>
-            <column name="school">School of Public and Environmental Affairs</column>
         </table>
         <table name="degrees">
             <column name="id"> f2b74a0b7f4f4e1a010c98600c641f6</column>
@@ -1143,22 +1378,10 @@
             <column name="school">School of Social Work</column>
         </table>
         <table name="degrees">
-            <column name="id"> 43dba7e37f4f4e1a0072da3da3e591a</column>
-            <column name="link">http://www.indiana.edu/~landskib/</column>
-            <column name="title">Landscape Studies</column>
-            <column name="school">College of Arts and Sciences</column>
-        </table>
-        <table name="degrees">
             <column name="id"> f2bdc09e7f4f4e1a010c9860024f55b</column>
             <column name="link">http://education.indiana.edu/undergraduate/programs/world-languages.html</column>
             <column name="title">Language Education/World Languages</column>
             <column name="school">School of Education</column>
-        </table>
-        <table name="degrees">
-            <column name="id"> 8eed0187814f4e1a01f1815381ebb31</column>
-            <column name="link">#</column>
-            <column name="title">Language Sciences (see Speech and Hearing Sciences)</column>
-            <column name="school">College of Arts and Sciences</column>
         </table>
         <table name="degrees">
             <column name="id"> f2be48f87f4f4e1a010c9860f8e03b2</column>
@@ -1185,18 +1408,6 @@
             <column name="school">Maurer School of Law</column>
         </table>
         <table name="degrees">
-            <column name="id"> 54d7b128814f4e1a63de5fd6b25ef6f</column>
-            <column name="link">http://www.law.indiana.edu/degrees/graduate/</column>
-            <column name="title">Law and Social Science</column>
-            <column name="school">Maurer School of Law</column>
-        </table>
-        <table name="degrees">
-            <column name="id"> f2c7f0d57f4f4e1a010c9860588d0eb</column>
-            <column name="link">https://spea.indiana.edu/undergraduate/majors-minors-certificates/law-public-policy.html</column>
-            <column name="title">Law and Public Policy</column>
-            <column name="school">School of Public and Environmental Affairs</column>
-        </table>
-        <table name="degrees">
             <column name="id"> f2c5a0697f4f4e1a010c98607376c15</column>
             <column name="link">#</column>
             <column name="title">Leadership, Ethics, and Social Action (see Political and Civic Engagement)</column>
@@ -1213,6 +1424,12 @@
             <column name="link">http://www.kelley.iu.edu/buslaw/</column>
             <column name="title">Legal Studies</column>
             <column name="school">Kelley School of Business</column>
+        </table>
+        <table name="degrees">
+            <column name="id"> f2c7f0d57f4f4e1a010c9860588d0eb</column>
+            <column name="link">https://spea.indiana.edu/undergraduate/majors-minors-certificates/law-public-policy.html</column>
+            <column name="title">Law and Public Policy</column>
+            <column name="school">School of Public and Environmental Affairs</column>
         </table>
         <table name="degrees">
             <column name="id"> f2c8790d7f4f4e1a010c98600150303</column>
@@ -1239,27 +1456,15 @@
             <column name="school">College of Arts and Sciences</column>
         </table>
         <table name="degrees">
-            <column name="id"> 40bc429b814f4e1a26d5758e1908030</column>
-            <column name="link">http://education.indiana.edu/graduate/programs/literacy-culture-language/index.html</column>
-            <column name="title">Literacy, Culture, and Language Education</column>
-            <column name="school">School of Education</column>
-        </table>
-        <table name="degrees">
-            <column name="id"> 5233cd167f4f4e1c00d2fa99722d8cc</column>
-            <column name="link">https://spea.indiana.edu/masters/degrees-certificates/public-affairs/concentrations/local-government.html</column>
-            <column name="title">Local Government Management</column>
-            <column name="school">School of Public and Environmental Affairs</column>
-        </table>
-        <table name="degrees">
             <column name="id"> f2dbe51f7f4f4e1a010c9860f01fe5c</column>
             <column name="link">http://kelley.iu.edu/management/</column>
             <column name="title">Management</column>
             <column name="school">Kelley School of Business</column>
         </table>
         <table name="degrees">
-            <column name="id"> af61cd7a814f4e1a3c572554c01d801</column>
-            <column name="link">https://spea.indiana.edu/undergraduate/majors-minors-certificates/management.html</column>
-            <column name="title">Management</column>
+            <column name="id"> f2dc849e7f4f4e1a010c9860f01028f</column>
+            <column name="link">https://spea.indiana.edu/masters/degrees-certificates/public-affairs/concentrations/public-management.html</column>
+            <column name="title">Public Management</column>
             <column name="school">School of Public and Environmental Affairs</column>
         </table>
         <table name="degrees">
@@ -1275,9 +1480,9 @@
             <column name="school">School of Journalism</column>
         </table>
         <table name="degrees">
-            <column name="id"> 54c472f5814f4e1a63de5fd69c3a587</column>
-            <column name="link">http://www.indiana.edu/~telecom/graduate/</column>
-            <column name="title">Mass Communication</column>
+            <column name="id"> f2de16bf7f4f4e1a010c986036e12ab</column>
+            <column name="link">http://www.indiana.edu/~medphyms/</column>
+            <column name="title">Medical Physics</column>
             <column name="school">College of Arts and Sciences</column>
         </table>
         <table name="degrees">
@@ -1293,12 +1498,6 @@
             <column name="school">School of Education</column>
         </table>
         <table name="degrees">
-            <column name="id"> f2de16bf7f4f4e1a010c986036e12ab</column>
-            <column name="link">http://www.indiana.edu/~medphyms/</column>
-            <column name="title">Medical Physics</column>
-            <column name="school">College of Arts and Sciences</column>
-        </table>
-        <table name="degrees">
             <column name="id"> f2e082687f4f4e1a010c98602af4e8d</column>
             <column name="link">http://www.bloomington.medicine.iu.edu/</column>
             <column name="title">Medical Sciences</column>
@@ -1311,27 +1510,9 @@
             <column name="school">College of Arts and Sciences</column>
         </table>
         <table name="degrees">
-            <column name="id"> 455a521c7f4f4e1a01ba4b54c9af292</column>
-            <column name="link">http://www.indiana.edu/~finaweb/test/cms/fina/areas/metals/</column>
-            <column name="title">Metalsmithing and Jewelry Design</column>
-            <column name="school">College of Arts and Sciences</column>
-        </table>
-        <table name="degrees">
-            <column name="id"> fc882e7f7f4f4e1a010c9860dada495</column>
-            <column name="link">#</column>
-            <column name="title">Methodology (see Inquiry Methodology)</column>
-            <column name="school"></column>
-        </table>
-        <table name="degrees">
             <column name="id"> f2e3b3e07f4f4e1a010c9860927e489</column>
             <column name="link">http://www.bio.indiana.edu/</column>
             <column name="title">Microbiology</column>
-            <column name="school">College of Arts and Sciences</column>
-        </table>
-        <table name="degrees">
-            <column name="id"> 54c77c2b814f4e1a63de5fd69b51a84</column>
-            <column name="link">http://www.bio.indiana.edu/graduate/mcdb/</column>
-            <column name="title">Molecular, Cellular, and Developmental Biology</column>
             <column name="school">College of Arts and Sciences</column>
         </table>
         <table name="degrees">
@@ -1383,40 +1564,16 @@
             <column name="school">College of Arts and Sciences</column>
         </table>
         <table name="degrees">
-            <column name="id"> 23c6dc67814f4e1c015589d4d277385</column>
-            <column name="link">http://www.indiana.edu/~neurosci</column>
-            <column name="title">Neuroscience</column>
-            <column name="school">College of Arts and Sciences</column>
-        </table>
-        <table name="degrees">
-            <column name="id"> 54c87e59814f4e1a63de5fd673a73be</column>
-            <column name="link">http://www.indiana.edu/~telecom/undergraduate/certificate_media.shtml</column>
-            <column name="title">New Media and Interactive Storytelling</column>
-            <column name="school">College of Arts and Sciences</column>
-        </table>
-        <table name="degrees">
-            <column name="id"> fc8621667f4f4e1a010c98602f04b05</column>
-            <column name="link">#</column>
-            <column name="title">New Venture and Business Development (see Business Administration)</column>
-            <column name="school"></column>
-        </table>
-        <table name="degrees">
-            <column name="id"> afbd2579814f4e1a3c5725547fa4059</column>
-            <column name="link">http://www.indiana.edu/~germanic/dutch/Norwegian.shtml</column>
-            <column name="title">Norwegian</column>
-            <column name="school">College of Arts and Sciences</column>
+            <column name="id"> f744eb697f4f4e1c01928b7c73fba6d</column>
+            <column name="link">https://spea.indiana.edu/undergraduate/majors-minors-certificates/public-nonprofit-management.html</column>
+            <column name="title">Public and Nonprofit Management</column>
+            <column name="school">School of Public and Environmental Affairs</column>
         </table>
         <table name="degrees">
             <column name="id"> f745e12d7f4f4e1c01928b7c2749e4d</column>
             <column name="link">http://www.indiana.edu/~iubnurse/bsn.html</column>
             <column name="title">Nursing</column>
             <column name="school">School of Nursing</column>
-        </table>
-        <table name="degrees">
-            <column name="id"> b208c153814f4e1a53dee19d2057cf9</column>
-            <column name="link">http://www.publichealth.indiana.edu/departments/applied-health-science/degrees/index.shtml</column>
-            <column name="title">Nutrition</column>
-            <column name="school">School of Public Health—Bloomington</column>
         </table>
         <table name="degrees">
             <column name="id"> f7473d367f4f4e1c01928b7cba260fd</column>
@@ -1431,22 +1588,10 @@
             <column name="school">Jacobs School of Music</column>
         </table>
         <table name="degrees">
-            <column name="id"> 06052594814f4e1a4609ac80c6bf32a</column>
-            <column name="link">http://music.indiana.edu/departments/academic/opera/degrees.shtml</column>
-            <column name="title">Opera Studies</column>
-            <column name="school">Jacobs School of Music</column>
-        </table>
-        <table name="degrees">
             <column name="id"> f74e893f7f4f4e1c01928b7c445bd69</column>
             <column name="link">http://www.kelley.iu.edu/odt/</column>
             <column name="title">Operations Management</column>
             <column name="school">Kelley School of Business</column>
-        </table>
-        <table name="degrees">
-            <column name="id"> af54ebe5814f4e1a3c5725540773b20</column>
-            <column name="link">http://www.optometry.iu.edu/academics/degrees/index.shtml</column>
-            <column name="title">Optometric Technology/Opticianry</column>
-            <column name="school">School of Optometry</column>
         </table>
         <table name="degrees">
             <column name="id"> f75081727f4f4e1c01928b7cde54315</column>
@@ -1485,28 +1630,10 @@
             <column name="school">School of Public Health—Bloomington</column>
         </table>
         <table name="degrees">
-            <column name="id"> 54e3010e814f4e1a63de5fd67ebd622</column>
-            <column name="link">http://www.publichealth.indiana.edu/departments/recreation-park-tourism-studies/index.shtml</column>
-            <column name="title">Outdoor Recreation, Parks, and Human Ecology</column>
-            <column name="school">School of Public Health—Bloomington</column>
-        </table>
-        <table name="degrees">
             <column name="id"> f75bc1dc7f4f4e1c01928b7c45b88b6</column>
             <column name="link">http://www.indiana.edu/~finaweb/test/cms/fina/areas/painting/</column>
             <column name="title">Painting</column>
             <column name="school">College of Arts and Sciences</column>
-        </table>
-        <table name="degrees">
-            <column name="id"> 54ffde51814f4e1a63de5fd60543da7</column>
-            <column name="link">http://www.publichealth.indiana.edu/current-students/distance-education/park-public-lands.shtml</column>
-            <column name="title">Park and Public Lands Management</column>
-            <column name="school">School of Public Health—Bloomington</column>
-        </table>
-        <table name="degrees">
-            <column name="id"> 550974e7814f4e1a63de5fd6f89f96c</column>
-            <column name="link">http://grad.medicine.iu.edu/degree-programs/</column>
-            <column name="title">Pathology</column>
-            <column name="school">School of Medicine</column>
         </table>
         <table name="degrees">
             <column name="id"> f7601e7a7f4f4e1c01928b7cd2156ea</column>
@@ -1533,12 +1660,6 @@
             <column name="school">College of Arts and Sciences</column>
         </table>
         <table name="degrees">
-            <column name="id"> 550098b6814f4e1a63de5fd6722ab99</column>
-            <column name="link">http://www.publichealth.indiana.edu/program-areas/health-fitness-specialist/masters.shtml</column>
-            <column name="title">Physical Activity, Fitness and Wellness</column>
-            <column name="school">School of Public Health—Bloomington</column>
-        </table>
-        <table name="degrees">
             <column name="id"> f770ac667f4f4e1c01928b7c61b733e</column>
             <column name="link">http://www.publichealth.indiana.edu/program-areas/physical-education/index.shtml</column>
             <column name="title">Physical Education Teacher Education</column>
@@ -1563,34 +1684,16 @@
             <column name="school">Jacobs School of Music</column>
         </table>
         <table name="degrees">
-            <column name="id"> 54c91d6c814f4e1a63de5fd6a3e232d</column>
-            <column name="link">http://www.bio.indiana.edu/graduate/mcdb/</column>
-            <column name="title">Plant Sciences</column>
-            <column name="school">College of Arts and Sciences</column>
-        </table>
-        <table name="degrees">
             <column name="id"> f77495357f4f4e1c01928b7c8b67605</column>
             <column name="link">https://spea.indiana.edu/undergraduate/majors-minors-certificates/policy-analysis.html</column>
             <column name="title">Policy Analysis</column>
             <column name="school">School of Public and Environmental Affairs</column>
         </table>
         <table name="degrees">
-            <column name="id"> de71b1da7f4f4e1c015a23045018de2</column>
-            <column name="link">http://pace.indiana.edu/program/</column>
-            <column name="title">Political and Civic Engagement</column>
-            <column name="school">College of Arts and Sciences</column>
-        </table>
-        <table name="degrees">
             <column name="id"> f77535cd7f4f4e1c01928b7c30abc89</column>
             <column name="link">http://www.indiana.edu/~iupolsci/</column>
             <column name="title">Political Science</column>
             <column name="school">College of Arts and Sciences</column>
-        </table>
-        <table name="degrees">
-            <column name="id"> fc8670dd7f4f4e1a010c9860fa014b1</column>
-            <column name="link">#</column>
-            <column name="title">Pollution Control Technologies and Remediation (see Environmental Science)</column>
-            <column name="school"></column>
         </table>
         <table name="degrees">
             <column name="id"> f777833f7f4f4e1c01928b7c7f91a31</column>
@@ -1603,12 +1706,6 @@
             <column name="link">http://www.indiana.edu/~finaweb/test/cms/fina/areas/printmaking/</column>
             <column name="title">Printmaking</column>
             <column name="school">College of Arts and Sciences</column>
-        </table>
-        <table name="degrees">
-            <column name="id"> b1dfbe79814f4e1a53dee19dc71ec6a</column>
-            <column name="link">http://www.publichealth.indiana.edu/departments/applied-health-science/degrees/index.shtml</column>
-            <column name="title">Professional Health Education</column>
-            <column name="school">School of Public Health—Bloomington</column>
         </table>
         <table name="degrees">
             <column name="id"> f77c6dc67f4f4e1c01928b7ccbda91c</column>
@@ -1629,9 +1726,9 @@
             <column name="school">School of Public and Environmental Affairs</column>
         </table>
         <table name="degrees">
-            <column name="id"> b2097e03814f4e1a53dee19dc00b432</column>
-            <column name="link">http://www.publichealth.indiana.edu/departments/applied-health-science/degrees/index.shtml</column>
-            <column name="title">Public Health</column>
+            <column name="id"> f77f63d87f4f4e1c01928b7c7b6f115</column>
+            <column name="link">http://www.publichealth.indiana.edu/degrees/graduate.shtml</column>
+            <column name="title">Public Health Administration</column>
             <column name="school">School of Public Health—Bloomington</column>
         </table>
         <table name="degrees">
@@ -1639,48 +1736,6 @@
             <column name="link">https://spea.indiana.edu/undergraduate/majors-minors-certificates/certificates.html</column>
             <column name="title">Public Health</column>
             <column name="school">School of Public and Environmental Affairs</column>
-        </table>
-        <table name="degrees">
-            <column name="id"> f77f63d87f4f4e1c01928b7c7b6f115</column>
-            <column name="link">http://www.publichealth.indiana.edu/degrees/graduate.shtml</column>
-            <column name="title">Public Health Administration</column>
-            <column name="school">School of Public Health—Bloomington</column>
-        </table>
-        <table name="degrees">
-            <column name="id"> f2dc849e7f4f4e1a010c9860f01028f</column>
-            <column name="link">https://spea.indiana.edu/masters/degrees-certificates/public-affairs/concentrations/public-management.html</column>
-            <column name="title">Public Management</column>
-            <column name="school">School of Public and Environmental Affairs</column>
-        </table>
-        <table name="degrees">
-            <column name="id"> 5502d632814f4e1a63de5fd67244406</column>
-            <column name="link">http://www.publichealth.indiana.edu/degrees/undergraduate.shtml</column>
-            <column name="title">Public, Nonprofit, and Community Recreation</column>
-            <column name="school">School of Public Health—Bloomington</column>
-        </table>
-        <table name="degrees">
-            <column name="id"> f744eb697f4f4e1c01928b7c73fba6d</column>
-            <column name="link">https://spea.indiana.edu/undergraduate/majors-minors-certificates/public-nonprofit-management.html</column>
-            <column name="title">Public and Nonprofit Management</column>
-            <column name="school">School of Public and Environmental Affairs</column>
-        </table>
-        <table name="degrees">
-            <column name="id"> 450f18807f4f4e1a01ba4b54d74dc13</column>
-            <column name="link">http://kelley.iu.edu/bepp/</column>
-            <column name="title">Public Policy</column>
-            <column name="school">Kelley School of Business</column>
-        </table>
-        <table name="degrees">
-            <column name="id"> 32f226a1814f4e1a7e376ff40e87e29</column>
-            <column name="link">https://spea.indiana.edu/doctoral/degrees/public-policy.html</column>
-            <column name="title">Public Policy</column>
-            <column name="school">School of Public and Environmental Affairs</column>
-        </table>
-        <table name="degrees">
-            <column name="id"> 54d5f149814f4e1a63de5fd64510a2c</column>
-            <column name="link">http://kelley.iu.edu/Ugrad/Academics/Curriculum/page39588.html</column>
-            <column name="title">Real Estate</column>
-            <column name="school">Kelley School of Business</column>
         </table>
         <table name="degrees">
             <column name="id"> f78288cd7f4f4e1c01928b7c427d002</column>
@@ -1695,27 +1750,9 @@
             <column name="school">School of Public Health—Bloomington</column>
         </table>
         <table name="degrees">
-            <column name="id"> 5503e1aa814f4e1a63de5fd661acdd5</column>
-            <column name="link">http://www.publichealth.indiana.edu/degrees/graduate.shtml</column>
-            <column name="title">Recreation Administration</column>
-            <column name="school">School of Public Health—Bloomington</column>
-        </table>
-        <table name="degrees">
             <column name="id"> f7876b327f4f4e1c01928b7c4ce9681</column>
             <column name="link">http://www.publichealth.indiana.edu/degrees/undergraduate.shtml#bs-rs</column>
             <column name="title">Recreational Sport Management</column>
-            <column name="school">School of Public Health—Bloomington</column>
-        </table>
-        <table name="degrees">
-            <column name="id"> 5504a90e814f4e1a63de5fd6a87556e</column>
-            <column name="link">http://www.publichealth.indiana.edu/degrees/graduate.shtml</column>
-            <column name="title">Recreational Sports Administration</column>
-            <column name="school">School of Public Health—Bloomington</column>
-        </table>
-        <table name="degrees">
-            <column name="id"> 55056bfb814f4e1a63de5fd6987a000</column>
-            <column name="link">http://www.publichealth.indiana.edu/departments/recreation-park-tourism-studies/index.shtml</column>
-            <column name="title">Recreational Therapy</column>
             <column name="school">School of Public Health—Bloomington</column>
         </table>
         <table name="degrees">
@@ -1725,22 +1762,10 @@
             <column name="school">College of Arts and Sciences</column>
         </table>
         <table name="degrees">
-            <column name="id"> 1c60f4e97f4f4e1c00d5bb2fb5064c8</column>
-            <column name="link">http://www.indiana.edu/~rena/</column>
-            <column name="title">Renaissance Studies</column>
-            <column name="school">College of Arts and Sciences</column>
-        </table>
-        <table name="degrees">
             <column name="id"> f78bda727f4f4e1c01928b7cf537da6</column>
             <column name="link">http://www.indiana.edu/~reeiweb/</column>
             <column name="title">Russian and East European Studies</column>
             <column name="school">College of Arts and Sciences</column>
-        </table>
-        <table name="degrees">
-            <column name="id"> 55067481814f4e1a63de5fd6e5f59cd</column>
-            <column name="link">http://www.publichealth.indiana.edu/departments/applied-health-science/degrees/index.shtml</column>
-            <column name="title">Safety</column>
-            <column name="school">School of Public Health—Bloomington</column>
         </table>
         <table name="degrees">
             <column name="id"> f79279657f4f4e1c01928b7c41151b0</column>
@@ -1773,18 +1798,6 @@
             <column name="school">School of Education</column>
         </table>
         <table name="degrees">
-            <column name="id"> 54d9e54a814f4e1a63de5fd6d35bdde</column>
-            <column name="link">http://education.indiana.edu/graduate/programs/science-ed/index.html</column>
-            <column name="title">Science Education</column>
-            <column name="school">School of Education</column>
-        </table>
-        <table name="degrees">
-            <column name="id"> afa19d6a814f4e1a3c5725544c43a49</column>
-            <column name="link">http://www.indiana.edu/~scicomp/index.shtml</column>
-            <column name="title">Scientific Computing</column>
-            <column name="school">College of Arts and Sciences</column>
-        </table>
-        <table name="degrees">
             <column name="id"> f7965c4a7f4f4e1c01928b7c8bf6842</column>
             <column name="link">http://www.indiana.edu/~finaweb/test/cms/fina/areas/sculpture/</column>
             <column name="title">Sculpture</column>
@@ -1795,12 +1808,6 @@
             <column name="link">http://www.indiana.edu/~dsls/degrees/</column>
             <column name="title">Second Language Studies</column>
             <column name="school">College of Arts and Sciences</column>
-        </table>
-        <table name="degrees">
-            <column name="id"> 40c0a271814f4e1a26d5758e0e8084f</column>
-            <column name="link">http://education.indiana.edu/graduate/programs/secondary-ed/index.html</column>
-            <column name="title">Secondary Education (graduate)</column>
-            <column name="school">School of Education</column>
         </table>
         <table name="degrees">
             <column name="id"> f799850c7f4f4e1c01928b7c45b11d8</column>
@@ -1819,12 +1826,6 @@
             <column name="link">http://www.indiana.edu/~iuslavic/</column>
             <column name="title">Slavic Languages and Literatures</column>
             <column name="school">College of Arts and Sciences</column>
-        </table>
-        <table name="degrees">
-            <column name="id"> 5237a2fa7f4f4e1c00d2fa99acba587</column>
-            <column name="link">http://www.indiana.edu/~spea/career_development/about_us/career_development/career_guides/social_enterprise.shtml</column>
-            <column name="title">Social Entrepreneurship</column>
-            <column name="school">School of Public and Environmental Affairs</column>
         </table>
         <table name="degrees">
             <column name="id"> f79c8e5e7f4f4e1c01928b7cfd65390</column>
@@ -1869,12 +1870,6 @@
             <column name="school"></column>
         </table>
         <table name="degrees">
-            <column name="id"> 40c7f1f4814f4e1a26d5758ef268167</column>
-            <column name="link">http://education.indiana.edu/graduate/programs/special-ed/index.html</column>
-            <column name="title">Special Education (graduate)</column>
-            <column name="school">School of Education</column>
-        </table>
-        <table name="degrees">
             <column name="id"> f7a498767f4f4e1c01928b7cbcb434b</column>
             <column name="link">http://education.indiana.edu/undergraduate/programs/special.html</column>
             <column name="title">Special Education (undergraduate)</column>
@@ -1911,22 +1906,10 @@
             <column name="school">School of Public Health—Bloomington</column>
         </table>
         <table name="degrees">
-            <column name="id"> 54cc3b52814f4e1a63de5fd64f31968</column>
-            <column name="link">http://stat.indiana.edu/grad/</column>
-            <column name="title">Statistical Science</column>
-            <column name="school">College of Arts and Sciences</column>
-        </table>
-        <table name="degrees">
             <column name="id"> f7aa34437f4f4e1c01928b7ce144ba1</column>
             <column name="link">http://www.stat.indiana.edu/</column>
             <column name="title">Statistics</column>
             <column name="school">College of Arts and Sciences</column>
-        </table>
-        <table name="degrees">
-            <column name="id"> 54d6f2ef814f4e1a63de5fd66cb25ce</column>
-            <column name="link">http://kelley.iu.edu/MBA/Academics/MajorsMinors/page38914.html</column>
-            <column name="title">Strategic Analysis of Accounting</column>
-            <column name="school">Kelley School of Business</column>
         </table>
         <table name="degrees">
             <column name="id"> f7aa9e4d7f4f4e1c01928b7c5277326</column>
@@ -1939,30 +1922,6 @@
             <column name="link">http://www.indiana.edu/~finaweb/fa.php</column>
             <column name="title">Studio Art</column>
             <column name="school">College of Arts and Sciences</column>
-        </table>
-        <table name="degrees">
-            <column name="id"> 450cf15f7f4f4e1a01ba4b54f8219ee</column>
-            <column name="link">http://kelley.iu.edu/odt/</column>
-            <column name="title">Supply Chain and Operations</column>
-            <column name="school">Kelley School of Business</column>
-        </table>
-        <table name="degrees">
-            <column name="id"> 450b68837f4f4e1a01ba4b54ba6f278</column>
-            <column name="link">http://kelley.iu.edu/odt/</column>
-            <column name="title">Supply Chain Management</column>
-            <column name="school">Kelley School of Business</column>
-        </table>
-        <table name="degrees">
-            <column name="id"> e5b008b4814f4e1a0c5a7291d3fb945</column>
-            <column name="link">https://spea.indiana.edu/masters/degrees-certificates/public-affairs/concentrations/sustainability.html</column>
-            <column name="title">Sustainability and Sustainable Development</column>
-            <column name="school">School of Public and Environmental Affairs</column>
-        </table>
-        <table name="degrees">
-            <column name="id"> 450c02d07f4f4e1a01ba4b547c8db77</column>
-            <column name="link">http://kelley.iu.edu/odt/</column>
-            <column name="title">Technology Management (co-major only)</column>
-            <column name="school">Kelley School of Business</column>
         </table>
         <table name="degrees">
             <column name="id"> f7ae11947f4f4e1c01928b7cba62e4c</column>
@@ -1995,12 +1954,6 @@
             <column name="school">School of Public Health—Bloomington</column>
         </table>
         <table name="degrees">
-            <column name="id"> 5507e59e814f4e1a63de5fd6e0fe4fa</column>
-            <column name="link">http://www.publichealth.indiana.edu/degrees/undergraduate.shtml#bs-th</column>
-            <column name="title">Tourism, Hospitality, and Event Management</column>
-            <column name="school">School of Public Health—Bloomington</column>
-        </table>
-        <table name="degrees">
             <column name="id"> f7b245517f4f4e1c01928b7cb39559f</column>
             <column name="link">http://www.publichealth.indiana.edu/degrees/graduate.shtml</column>
             <column name="title">Tourism Management</column>
@@ -2023,18 +1976,6 @@
             <column name="link">http://music.indiana.edu/departments/academic/brass/degrees.shtml</column>
             <column name="title">Tuba</column>
             <column name="school">Jacobs School of Music</column>
-        </table>
-        <table name="degrees">
-            <column name="id"> 55311906814f4e1a63de5fd6828e631</column>
-            <column name="link">https://spea.indiana.edu/undergraduate/majors-minors-certificates/certificates.html</column>
-            <column name="title">Urban Studies</column>
-            <column name="school">School of Public and Environmental Affairs</column>
-        </table>
-        <table name="degrees">
-            <column name="id"> e2a0c4bb7f4f4e1c015b393a057f2a1</column>
-            <column name="link">http://www.indiana.edu/~victstu/</column>
-            <column name="title">Victorian Studies</column>
-            <column name="school">College of Arts and Sciences</column>
         </table>
         <table name="degrees">
             <column name="id"> f7b662407f4f4e1c01928b7c705352f</column>
@@ -2067,10 +2008,10 @@
             <column name="school">Jacobs School of Music</column>
         </table>
         <table name="degrees">
-            <column name="id"> 5532455a814f4e1a63de5fd6eb0884f</column>
-            <column name="link">https://spea.indiana.edu/masters/degrees-certificates/environmental-science/concentrations/water-resources.html</column>
-            <column name="title">Water Resources</column>
-            <column name="school">School of Public and Environmental Affairs</column>
+            <column name="id"> f7c699f37f4f4e1c01928b7c2b3ce63</column>
+            <column name="link">http://www.iub.edu/~euroinst/academics</column>
+            <column name="title">European Studies</column>
+            <column name="school">College of Arts and Sciences</column>
         </table>
         <table name="degrees">
             <column name="id"> f7c79ff77f4f4e1c01928b7c8067d80</column>
@@ -2085,16 +2026,76 @@
             <column name="school">Jacobs School of Music</column>
         </table>
         <table name="degrees">
-            <column name="id"> afb96762814f4e1a3c572554f5c4de2</column>
-            <column name="link">http://www.indiana.edu/~germanic/dutch/#yiddish</column>
-            <column name="title">Yiddish</column>
-            <column name="school">College of Arts and Sciences</column>
+            <column name="id"> fc8064647f4f4e1a010c98608157d29</column>
+            <column name="link">#</column>
+            <column name="title">Art History (see History of Art)</column>
+            <column name="school"></column>
         </table>
         <table name="degrees">
-            <column name="id"> 55087247814f4e1a63de5fd67308d5f</column>
-            <column name="link">http://www.publichealth.indiana.edu/degrees/undergraduate.shtml</column>
-            <column name="title">Youth Development</column>
-            <column name="school">School of Public Health—Bloomington</column>
+            <column name="id"> fc80ee8c7f4f4e1a010c98602f7563a</column>
+            <column name="link">#</column>
+            <column name="title">Audio Recording (see Recording Arts)</column>
+            <column name="school"></column>
+        </table>
+        <table name="degrees">
+            <column name="id"> fc815a137f4f4e1a010c986002c5b90</column>
+            <column name="link">#</column>
+            <column name="title">Audio Technology (see Recording Arts)</column>
+            <column name="school"></column>
+        </table>
+        <table name="degrees">
+            <column name="id"> fc81feb57f4f4e1a010c986011b5d3e</column>
+            <column name="link">#</column>
+            <column name="title">Band (see Conducting, Wind)</column>
+            <column name="school"></column>
+        </table>
+        <table name="degrees">
+            <column name="id"> fc82d3907f4f4e1a010c98607049704</column>
+            <column name="link">#</column>
+            <column name="title">Ecosystem Science (see Environmental Science)</column>
+            <column name="school"></column>
+        </table>
+        <table name="degrees">
+            <column name="id"> fc8339527f4f4e1a010c9860c803ff4</column>
+            <column name="link">#</column>
+            <column name="title">Electronic and Computer Music (see Computer Music Composition)</column>
+            <column name="school"></column>
+        </table>
+        <table name="degrees">
+            <column name="id"> fc83947d7f4f4e1a010c9860ca14959</column>
+            <column name="link">#</column>
+            <column name="title">Hazard Control Technology (see Safety Management)</column>
+            <column name="school"></column>
+        </table>
+        <table name="degrees">
+            <column name="id"> fc85717b7f4f4e1a010c98604ce9994</column>
+            <column name="link">#</column>
+            <column name="title">Hydrology and Water Resources (see Environmental Science)</column>
+            <column name="school"></column>
+        </table>
+        <table name="degrees">
+            <column name="id"> fc85c4e47f4f4e1a010c986095a11ca</column>
+            <column name="link">#</column>
+            <column name="title">Instrumental Teaching (see Music Education)</column>
+            <column name="school"></column>
+        </table>
+        <table name="degrees">
+            <column name="id"> fc8621667f4f4e1a010c98602f04b05</column>
+            <column name="link">#</column>
+            <column name="title">New Venture and Business Development (see Business Administration)</column>
+            <column name="school"></column>
+        </table>
+        <table name="degrees">
+            <column name="id"> fc8670dd7f4f4e1a010c9860fa014b1</column>
+            <column name="link">#</column>
+            <column name="title">Pollution Control Technologies and Remediation (see Environmental Science)</column>
+            <column name="school"></column>
+        </table>
+        <table name="degrees">
+            <column name="id"> fc882e7f7f4f4e1a010c9860dada495</column>
+            <column name="link">#</column>
+            <column name="title">Methodology (see Inquiry Methodology)</column>
+            <column name="school"></column>
         </table>
     </database>
 </pma_xml_export>
