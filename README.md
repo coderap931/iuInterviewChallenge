@@ -12,8 +12,8 @@
 --Notes--
 Visual representation of Database Schema as Implemented
 
-!database as implemented(./assets/dbImplemented.png)
+![database as implemented](./assets/dbImplemented.png)
 
 Visual representation of Database Schema if Implemented Relationally
 
-!database as relational(./assets/dbRelational.png)
+![database as relational](./assets/dbRelational.png)
