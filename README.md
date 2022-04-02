@@ -16,6 +16,7 @@
 
 
 --Notes--
+
 Visual representation of Database Schema as Implemented
 
 ![database as implemented](./assets/dbImplemented.png)
